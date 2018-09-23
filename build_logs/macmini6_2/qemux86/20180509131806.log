@@ -1,0 +1,1290 @@
+NOTE: Resolving any missing task queue dependencies
+
+Build Configuration:
+BB_VERSION           = "1.36.0"
+BUILD_SYS            = "x86_64-linux"
+NATIVELSBSTRING      = "universal"
+TARGET_SYS           = "i586-poky-linux"
+MACHINE              = "qemux86"
+DISTRO               = "poky"
+DISTRO_VERSION       = "2.4.2"
+TUNE_FEATURES        = "m32 i586"
+TARGET_FPU           = ""
+meta                 
+meta-poky            
+meta-yocto-bsp       = "poky_2.4.2:342fbd6a3e57021c8e28b124b3adb241936f3d9d"
+
+NOTE: Executing SetScene Tasks
+NOTE: Executing RunQueue Tasks
+NOTE: Running task 85 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils-cross_2.29.1.bb:do_fetch)
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_fetch: Started
+NOTE: Running task 745 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils_2.29.1.bb:do_fetch)
+NOTE: recipe binutils-native-2.29.1-r0: task do_fetch: Started
+NOTE: Running task 1587 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils_2.29.1.bb:do_fetch)
+NOTE: recipe binutils-2.29.1-r0: task do_fetch: Started
+WARNING: binutils-cross-i586-2.29.1-r0 do_fetch: Failed to fetch URL git://sourceware.org/git/binutils-gdb.git;branch=binutils-2_29-branch;protocol=git, attempting MIRRORS if available
+NOTE: recipe binutils-native-2.29.1-r0: task do_fetch: Succeeded
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_fetch: Succeeded
+NOTE: Running task 2909 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils_2.29.1.bb:do_unpack)
+NOTE: Running task 2910 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils-cross_2.29.1.bb:do_unpack)
+NOTE: Running task 2911 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils-cross_2.29.1.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2912 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils_2.29.1.bb:do_prepare_recipe_sysroot)
+NOTE: recipe binutils-2.29.1-r0: task do_fetch: Succeeded
+NOTE: Running task 2913 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils_2.29.1.bb:do_unpack)
+NOTE: recipe binutils-2.29.1-r0: task do_unpack: Started
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_unpack: Started
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe binutils-native-2.29.1-r0: task do_unpack: Started
+NOTE: recipe binutils-native-2.29.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe binutils-native-2.29.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe binutils-2.29.1-r0: task do_unpack: Succeeded
+NOTE: Running task 2914 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils_2.29.1.bb:do_patch)
+NOTE: recipe binutils-2.29.1-r0: task do_patch: Started
+NOTE: recipe binutils-2.29.1-r0: task do_patch: Succeeded
+NOTE: Running task 2915 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils_2.29.1.bb:do_populate_lic)
+NOTE: recipe binutils-2.29.1-r0: task do_populate_lic: Started
+NOTE: recipe binutils-2.29.1-r0: task do_populate_lic: Succeeded
+NOTE: recipe binutils-native-2.29.1-r0: task do_unpack: Succeeded
+NOTE: Running task 2916 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils_2.29.1.bb:do_patch)
+NOTE: recipe binutils-native-2.29.1-r0: task do_patch: Started
+NOTE: recipe binutils-native-2.29.1-r0: task do_patch: Succeeded
+NOTE: Running task 2917 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils_2.29.1.bb:do_configure)
+NOTE: Running task 2918 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils_2.29.1.bb:do_populate_lic)
+NOTE: recipe binutils-native-2.29.1-r0: task do_populate_lic: Started
+NOTE: recipe binutils-native-2.29.1-r0: task do_configure: Started
+NOTE: recipe binutils-native-2.29.1-r0: task do_populate_lic: Succeeded
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_unpack: Succeeded
+NOTE: Running task 2919 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils-cross_2.29.1.bb:do_patch)
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_patch: Started
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_patch: Succeeded
+NOTE: Running task 2920 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils-cross_2.29.1.bb:do_configure)
+NOTE: Running task 2921 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils-cross_2.29.1.bb:do_populate_lic)
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_configure: Started
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_populate_lic: Started
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_populate_lic: Succeeded
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_configure: Succeeded
+NOTE: Running task 2922 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils-cross_2.29.1.bb:do_compile)
+NOTE: recipe binutils-native-2.29.1-r0: task do_configure: Succeeded
+NOTE: Running task 2923 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils_2.29.1.bb:do_compile)
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_compile: Started
+NOTE: recipe binutils-native-2.29.1-r0: task do_compile: Started
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_compile: Succeeded
+NOTE: Running task 2924 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils-cross_2.29.1.bb:do_install)
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_install: Started
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_install: Succeeded
+NOTE: Running task 2925 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils-cross_2.29.1.bb:do_populate_sysroot)
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_populate_sysroot: Started
+NOTE: recipe binutils-cross-i586-2.29.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 2926 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-cross-initial_7.3.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 2927 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/linux-libc-headers/linux-libc-headers_4.12.bb:do_populate_sysroot)
+NOTE: Running task 2928 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/initscripts/initscripts_1.0.bb:do_populate_sysroot)
+NOTE: Running task 2929 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/base-files/base-files_3.0.14.bb:do_populate_sysroot)
+NOTE: Running task 2930 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/qemu/qemuwrapper-cross_1.0.bb:do_package_qa)
+NOTE: recipe initscripts-1.0-r155: task do_populate_sysroot: Started
+NOTE: recipe base-files-3.0.14-r89: task do_populate_sysroot: Started
+NOTE: recipe linux-libc-headers-4.12-r0: task do_populate_sysroot: Started
+NOTE: recipe gcc-cross-initial-i586-7.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe initscripts-1.0-r155: task do_populate_sysroot: Succeeded
+NOTE: Running task 2931 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/run-postinsts/run-postinsts_1.0.bb:do_prepare_recipe_sysroot)
+NOTE: recipe base-files-3.0.14-r89: task do_populate_sysroot: Succeeded
+NOTE: recipe gcc-cross-initial-i586-7.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe linux-libc-headers-4.12-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 2932 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-cross-initial_7.3.bb:do_configure)
+NOTE: Running task 2933 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/shadow/shadow-securetty_4.2.1.bb:do_package_qa)
+NOTE: Running task 2934 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/base-files/base-files_3.0.14.bb:do_package_qa)
+NOTE: recipe gcc-cross-initial-i586-7.3.0-r0: task do_configure: Started
+NOTE: Running task 2935 of 6148 (/home/hunter/yocto/poky/meta/recipes-bsp/formfactor/formfactor_0.0.bb:do_populate_sysroot)
+NOTE: Running task 2936 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/shadow/shadow-securetty_4.2.1.bb:do_populate_sysroot)
+NOTE: recipe run-postinsts-1.0-r9: task do_prepare_recipe_sysroot: Started
+NOTE: recipe qemuwrapper-cross-1.0-r0: task do_package_qa: Started
+NOTE: recipe shadow-securetty-4.2.1-r3: task do_populate_sysroot: Started
+NOTE: recipe shadow-securetty-4.2.1-r3: task do_package_qa: Started
+NOTE: recipe formfactor-0.0-r45: task do_populate_sysroot: Started
+NOTE: recipe run-postinsts-1.0-r9: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 2937 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/run-postinsts/run-postinsts_1.0.bb:do_configure)
+NOTE: recipe run-postinsts-1.0-r9: task do_configure: Started
+NOTE: recipe run-postinsts-1.0-r9: task do_configure: Succeeded
+NOTE: Running task 2938 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/run-postinsts/run-postinsts_1.0.bb:do_compile)
+NOTE: recipe base-files-3.0.14-r89: task do_package_qa: Started
+NOTE: recipe run-postinsts-1.0-r9: task do_compile: Started
+NOTE: recipe run-postinsts-1.0-r9: task do_compile: Succeeded
+NOTE: Running task 2939 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/run-postinsts/run-postinsts_1.0.bb:do_install)
+NOTE: recipe run-postinsts-1.0-r9: task do_install: Started
+NOTE: recipe run-postinsts-1.0-r9: task do_install: Succeeded
+NOTE: Running task 2940 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/run-postinsts/run-postinsts_1.0.bb:do_package)
+NOTE: recipe qemuwrapper-cross-1.0-r0: task do_package_qa: Succeeded
+NOTE: Running task 2941 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/initscripts/initscripts_1.0.bb:do_package_qa)
+NOTE: recipe shadow-securetty-4.2.1-r3: task do_populate_sysroot: Succeeded
+NOTE: Running task 2942 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/linux-libc-headers/linux-libc-headers_4.12.bb:do_package_qa)
+NOTE: recipe run-postinsts-1.0-r9: task do_package: Started
+NOTE: recipe shadow-securetty-4.2.1-r3: task do_package_qa: Succeeded
+NOTE: Running task 2943 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/run-postinsts/run-postinsts_1.0.bb:do_populate_sysroot)
+NOTE: recipe formfactor-0.0-r45: task do_populate_sysroot: Succeeded
+NOTE: recipe base-files-3.0.14-r89: task do_package_qa: Succeeded
+NOTE: Running task 2944 of 6148 (/home/hunter/yocto/poky/meta/recipes-bsp/formfactor/formfactor_0.0.bb:do_package_qa)
+NOTE: Running task 2945 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/sysvinit/sysvinit-inittab_2.88dsf.bb:do_package_qa)
+NOTE: recipe run-postinsts-1.0-r9: task do_populate_sysroot: Started
+NOTE: recipe initscripts-1.0-r155: task do_package_qa: Started
+NOTE: recipe run-postinsts-1.0-r9: task do_populate_sysroot: Succeeded
+NOTE: Running task 2946 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/sysvinit/sysvinit-inittab_2.88dsf.bb:do_populate_sysroot)
+NOTE: recipe linux-libc-headers-4.12-r0: task do_package_qa: Started
+NOTE: recipe sysvinit-inittab-2.88dsf-r10: task do_populate_sysroot: Started
+NOTE: recipe formfactor-0.0-r45: task do_package_qa: Started
+NOTE: recipe sysvinit-inittab-2.88dsf-r10: task do_package_qa: Started
+NOTE: recipe sysvinit-inittab-2.88dsf-r10: task do_populate_sysroot: Succeeded
+NOTE: Running noexec task 2947 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/shadow/shadow-securetty_4.2.1.bb:do_build)
+NOTE: Running noexec task 2948 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/base-files/base-files_3.0.14.bb:do_build)
+NOTE: Running noexec task 2949 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils-cross_2.29.1.bb:do_build)
+NOTE: Running noexec task 2950 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/qemu/qemuwrapper-cross_1.0.bb:do_build)
+NOTE: recipe formfactor-0.0-r45: task do_package_qa: Succeeded
+NOTE: Running noexec task 2951 of 6148 (/home/hunter/yocto/poky/meta/recipes-bsp/formfactor/formfactor_0.0.bb:do_build)
+NOTE: recipe initscripts-1.0-r155: task do_package_qa: Succeeded
+NOTE: Running noexec task 2952 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/initscripts/initscripts_1.0.bb:do_build)
+NOTE: recipe sysvinit-inittab-2.88dsf-r10: task do_package_qa: Succeeded
+NOTE: Running noexec task 2953 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/sysvinit/sysvinit-inittab_2.88dsf.bb:do_build)
+NOTE: recipe linux-libc-headers-4.12-r0: task do_package_qa: Succeeded
+NOTE: Running noexec task 2954 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/linux-libc-headers/linux-libc-headers_4.12.bb:do_build)
+NOTE: recipe gcc-cross-initial-i586-7.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 2955 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-cross-initial_7.3.bb:do_compile)
+NOTE: recipe gcc-cross-initial-i586-7.3.0-r0: task do_compile: Started
+NOTE: recipe run-postinsts-1.0-r9: task do_package: Succeeded
+NOTE: Running task 2956 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/run-postinsts/run-postinsts_1.0.bb:do_packagedata)
+NOTE: recipe run-postinsts-1.0-r9: task do_packagedata: Started
+NOTE: recipe run-postinsts-1.0-r9: task do_packagedata: Succeeded
+NOTE: Running task 2957 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/run-postinsts/run-postinsts_1.0.bb:do_package_write_rpm)
+NOTE: Running task 2958 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/run-postinsts/run-postinsts_1.0.bb:do_package_qa)
+NOTE: recipe run-postinsts-1.0-r9: task do_package_write_rpm: Started
+NOTE: recipe run-postinsts-1.0-r9: task do_package_qa: Started
+NOTE: recipe run-postinsts-1.0-r9: task do_package_qa: Succeeded
+NOTE: recipe run-postinsts-1.0-r9: task do_package_write_rpm: Succeeded
+NOTE: Running noexec task 2959 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/run-postinsts/run-postinsts_1.0.bb:do_build)
+NOTE: recipe binutils-native-2.29.1-r0: task do_compile: Succeeded
+NOTE: Running task 2960 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils_2.29.1.bb:do_install)
+NOTE: recipe binutils-native-2.29.1-r0: task do_install: Started
+NOTE: recipe binutils-native-2.29.1-r0: task do_install: Succeeded
+NOTE: Running task 2961 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils_2.29.1.bb:do_populate_sysroot)
+NOTE: recipe binutils-native-2.29.1-r0: task do_populate_sysroot: Started
+NOTE: recipe binutils-native-2.29.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 2962 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/prelink/prelink_git.bb:do_prepare_recipe_sysroot)
+NOTE: Running noexec task 2963 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/binutils/binutils_2.29.1.bb:do_build)
+NOTE: recipe prelink-native-1.0+gitAUTOINC+ef20628dd7-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe prelink-native-1.0+gitAUTOINC+ef20628dd7-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 2964 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/prelink/prelink_git.bb:do_configure)
+NOTE: recipe prelink-native-1.0+gitAUTOINC+ef20628dd7-r0: task do_configure: Started
+NOTE: recipe prelink-native-1.0+gitAUTOINC+ef20628dd7-r0: task do_configure: Succeeded
+NOTE: Running task 2965 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/prelink/prelink_git.bb:do_compile)
+NOTE: recipe prelink-native-1.0+gitAUTOINC+ef20628dd7-r0: task do_compile: Started
+NOTE: recipe prelink-native-1.0+gitAUTOINC+ef20628dd7-r0: task do_compile: Succeeded
+NOTE: Running task 2966 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/prelink/prelink_git.bb:do_install)
+NOTE: recipe prelink-native-1.0+gitAUTOINC+ef20628dd7-r0: task do_install: Started
+NOTE: recipe prelink-native-1.0+gitAUTOINC+ef20628dd7-r0: task do_install: Succeeded
+NOTE: Running task 2967 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/prelink/prelink_git.bb:do_populate_sysroot)
+NOTE: recipe prelink-native-1.0+gitAUTOINC+ef20628dd7-r0: task do_populate_sysroot: Started
+NOTE: recipe prelink-native-1.0+gitAUTOINC+ef20628dd7-r0: task do_populate_sysroot: Succeeded
+NOTE: Running noexec task 2968 of 6148 (virtual:native:/home/hunter/yocto/poky/meta/recipes-devtools/prelink/prelink_git.bb:do_build)
+NOTE: recipe gcc-cross-initial-i586-7.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 2969 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-cross-initial_7.3.bb:do_gcc_stash_builddir)
+NOTE: recipe gcc-cross-initial-i586-7.3.0-r0: task do_gcc_stash_builddir: Started
+NOTE: recipe gcc-cross-initial-i586-7.3.0-r0: task do_gcc_stash_builddir: Succeeded
+NOTE: Running task 2970 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-cross-initial_7.3.bb:do_install)
+NOTE: recipe gcc-cross-initial-i586-7.3.0-r0: task do_install: Started
+NOTE: recipe gcc-cross-initial-i586-7.3.0-r0: task do_install: Succeeded
+NOTE: Running task 2971 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-cross-initial_7.3.bb:do_populate_sysroot)
+NOTE: recipe gcc-cross-initial-i586-7.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe gcc-cross-initial-i586-7.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 2972 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc-initial_7.3.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libgcc-initial-7.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libgcc-initial-7.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 2973 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc-initial_7.3.bb:do_configure)
+NOTE: recipe libgcc-initial-7.3.0-r0: task do_configure: Started
+NOTE: recipe libgcc-initial-7.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 2974 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc-initial_7.3.bb:do_compile)
+NOTE: recipe libgcc-initial-7.3.0-r0: task do_compile: Started
+NOTE: recipe libgcc-initial-7.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 2975 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc-initial_7.3.bb:do_install)
+NOTE: recipe libgcc-initial-7.3.0-r0: task do_install: Started
+NOTE: recipe libgcc-initial-7.3.0-r0: task do_install: Succeeded
+NOTE: Running task 2976 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc-initial_7.3.bb:do_multilib_install)
+NOTE: recipe libgcc-initial-7.3.0-r0: task do_multilib_install: Started
+NOTE: recipe libgcc-initial-7.3.0-r0: task do_multilib_install: Succeeded
+NOTE: Running task 2977 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc-initial_7.3.bb:do_extra_symlinks)
+NOTE: recipe libgcc-initial-7.3.0-r0: task do_extra_symlinks: Started
+NOTE: recipe libgcc-initial-7.3.0-r0: task do_extra_symlinks: Succeeded
+NOTE: Running task 2978 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc-initial_7.3.bb:do_populate_sysroot)
+NOTE: recipe libgcc-initial-7.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe libgcc-initial-7.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 2979 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc-initial_2.26.bb:do_prepare_recipe_sysroot)
+NOTE: recipe glibc-initial-2.26-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe glibc-initial-2.26-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 2980 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc-initial_2.26.bb:do_configure)
+NOTE: recipe glibc-initial-2.26-r0: task do_configure: Started
+NOTE: recipe glibc-initial-2.26-r0: task do_configure: Succeeded
+NOTE: Running task 2981 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc-initial_2.26.bb:do_compile)
+NOTE: recipe glibc-initial-2.26-r0: task do_compile: Started
+NOTE: recipe glibc-initial-2.26-r0: task do_compile: Succeeded
+NOTE: Running task 2982 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc-initial_2.26.bb:do_install)
+NOTE: recipe glibc-initial-2.26-r0: task do_install: Started
+NOTE: recipe glibc-initial-2.26-r0: task do_install: Succeeded
+NOTE: Running task 2983 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc-initial_2.26.bb:do_stash_locale)
+NOTE: recipe glibc-initial-2.26-r0: task do_stash_locale: Started
+NOTE: recipe glibc-initial-2.26-r0: task do_stash_locale: Succeeded
+NOTE: Running task 2984 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc-initial_2.26.bb:do_poststash_install_cleanup)
+NOTE: recipe glibc-initial-2.26-r0: task do_poststash_install_cleanup: Started
+NOTE: recipe glibc-initial-2.26-r0: task do_poststash_install_cleanup: Succeeded
+NOTE: Running task 2985 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc-initial_2.26.bb:do_populate_sysroot)
+NOTE: recipe glibc-initial-2.26-r0: task do_populate_sysroot: Started
+NOTE: recipe glibc-initial-2.26-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 2986 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc_2.26.bb:do_prepare_recipe_sysroot)
+NOTE: recipe glibc-2.26-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe glibc-2.26-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 2987 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc_2.26.bb:do_configure)
+NOTE: recipe glibc-2.26-r0: task do_configure: Started
+NOTE: recipe glibc-2.26-r0: task do_configure: Succeeded
+NOTE: Running task 2988 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc_2.26.bb:do_compile)
+NOTE: recipe glibc-2.26-r0: task do_compile: Started
+NOTE: recipe glibc-2.26-r0: task do_compile: Succeeded
+NOTE: Running task 2989 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc_2.26.bb:do_install)
+NOTE: recipe glibc-2.26-r0: task do_install: Started
+NOTE: recipe glibc-2.26-r0: task do_install: Succeeded
+NOTE: Running task 2990 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc_2.26.bb:do_stash_locale)
+NOTE: recipe glibc-2.26-r0: task do_stash_locale: Started
+NOTE: recipe glibc-2.26-r0: task do_stash_locale: Succeeded
+NOTE: Running task 2991 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc_2.26.bb:do_poststash_install_cleanup)
+NOTE: Running task 2992 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc-locale_2.26.bb:do_install)
+NOTE: recipe glibc-2.26-r0: task do_poststash_install_cleanup: Started
+NOTE: recipe glibc-2.26-r0: task do_poststash_install_cleanup: Succeeded
+NOTE: Running task 2993 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc_2.26.bb:do_populate_sysroot)
+NOTE: Running task 2994 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc_2.26.bb:do_package)
+NOTE: recipe glibc-2.26-r0: task do_populate_sysroot: Started
+NOTE: recipe glibc-2.26-r0: task do_package: Started
+NOTE: recipe glibc-locale-2.26-r0: task do_install: Started
+NOTE: recipe glibc-locale-2.26-r0: task do_install: Succeeded
+NOTE: Running task 2995 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc-locale_2.26.bb:do_populate_sysroot)
+NOTE: Running task 2996 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc-locale_2.26.bb:do_package)
+NOTE: recipe glibc-locale-2.26-r0: task do_populate_sysroot: Started
+NOTE: recipe glibc-locale-2.26-r0: task do_package: Started
+NOTE: recipe glibc-locale-2.26-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe glibc-2.26-r0: task do_package: Succeeded
+NOTE: Running task 2997 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc_2.26.bb:do_packagedata)
+NOTE: recipe glibc-2.26-r0: task do_packagedata: Started
+NOTE: recipe glibc-2.26-r0: task do_packagedata: Succeeded
+NOTE: Running task 2998 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc_2.26.bb:do_package_write_rpm)
+NOTE: Running task 2999 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc_2.26.bb:do_package_qa)
+NOTE: recipe glibc-2.26-r0: task do_package_write_rpm: Started
+NOTE: recipe glibc-2.26-r0: task do_package_qa: Started
+NOTE: recipe glibc-2.26-r0: task do_package_qa: Succeeded
+NOTE: recipe glibc-2.26-r0: task do_package_write_rpm: Succeeded
+NOTE: recipe glibc-2.26-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3000 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-cross_7.3.bb:do_prepare_recipe_sysroot)
+NOTE: Running noexec task 3001 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc_2.26.bb:do_build)
+NOTE: recipe gcc-cross-i586-7.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gcc-cross-i586-7.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3002 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-cross_7.3.bb:do_configure)
+NOTE: recipe gcc-cross-i586-7.3.0-r0: task do_configure: Started
+NOTE: recipe gcc-cross-i586-7.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 3003 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-cross_7.3.bb:do_compile)
+NOTE: recipe gcc-cross-i586-7.3.0-r0: task do_compile: Started
+NOTE: recipe glibc-locale-2.26-r0: task do_package: Succeeded
+NOTE: Running task 3004 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc-locale_2.26.bb:do_packagedata)
+NOTE: recipe glibc-locale-2.26-r0: task do_packagedata: Started
+NOTE: recipe glibc-locale-2.26-r0: task do_packagedata: Succeeded
+NOTE: Running task 3005 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc-locale_2.26.bb:do_package_write_rpm)
+NOTE: Running task 3006 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc-locale_2.26.bb:do_package_qa)
+NOTE: recipe glibc-locale-2.26-r0: task do_package_write_rpm: Started
+NOTE: recipe glibc-locale-2.26-r0: task do_package_qa: Started
+NOTE: recipe glibc-locale-2.26-r0: task do_package_qa: Succeeded
+NOTE: recipe glibc-locale-2.26-r0: task do_package_write_rpm: Succeeded
+NOTE: Running noexec task 3007 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/glibc/glibc-locale_2.26.bb:do_build)
+NOTE: recipe gcc-cross-i586-7.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 3008 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-cross_7.3.bb:do_gcc_stash_builddir)
+NOTE: recipe gcc-cross-i586-7.3.0-r0: task do_gcc_stash_builddir: Started
+NOTE: recipe gcc-cross-i586-7.3.0-r0: task do_gcc_stash_builddir: Succeeded
+NOTE: Running task 3009 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-cross_7.3.bb:do_install)
+NOTE: recipe gcc-cross-i586-7.3.0-r0: task do_install: Started
+NOTE: recipe gcc-cross-i586-7.3.0-r0: task do_install: Succeeded
+NOTE: Running task 3010 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-cross_7.3.bb:do_populate_sysroot)
+NOTE: recipe gcc-cross-i586-7.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe gcc-cross-i586-7.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3011 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc_7.3.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 3012 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/linux/linux-yocto_4.12.bb:do_prepare_recipe_sysroot)
+NOTE: Running noexec task 3013 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-cross_7.3.bb:do_build)
+NOTE: recipe libgcc-7.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe linux-yocto-4.12.20+gitAUTOINC+19d815d5a3_4014605567-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libgcc-7.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3014 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc_7.3.bb:do_configure)
+NOTE: recipe libgcc-7.3.0-r0: task do_configure: Started
+NOTE: recipe linux-yocto-4.12.20+gitAUTOINC+19d815d5a3_4014605567-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3015 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/linux/linux-yocto_4.12.bb:do_configure)
+NOTE: recipe linux-yocto-4.12.20+gitAUTOINC+19d815d5a3_4014605567-r0: task do_configure: Started
+NOTE: recipe libgcc-7.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 3016 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc_7.3.bb:do_compile)
+NOTE: recipe libgcc-7.3.0-r0: task do_compile: Started
+NOTE: recipe libgcc-7.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 3017 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc_7.3.bb:do_install)
+NOTE: recipe libgcc-7.3.0-r0: task do_install: Started
+NOTE: recipe libgcc-7.3.0-r0: task do_install: Succeeded
+NOTE: Running task 3018 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc_7.3.bb:do_multilib_install)
+NOTE: recipe libgcc-7.3.0-r0: task do_multilib_install: Started
+NOTE: recipe libgcc-7.3.0-r0: task do_multilib_install: Succeeded
+NOTE: Running task 3019 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc_7.3.bb:do_extra_symlinks)
+NOTE: recipe libgcc-7.3.0-r0: task do_extra_symlinks: Started
+NOTE: recipe libgcc-7.3.0-r0: task do_extra_symlinks: Succeeded
+NOTE: Running task 3020 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc_7.3.bb:do_populate_sysroot)
+NOTE: Running task 3021 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc_7.3.bb:do_package)
+NOTE: recipe libgcc-7.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe libgcc-7.3.0-r0: task do_package: Started
+NOTE: recipe libgcc-7.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3022 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-runtime_7.3.bb:do_prepare_recipe_sysroot)
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3023 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-runtime_7.3.bb:do_configure)
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_configure: Started
+NOTE: recipe linux-yocto-4.12.20+gitAUTOINC+19d815d5a3_4014605567-r0: task do_configure: Succeeded
+NOTE: Running task 3024 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/linux/linux-yocto_4.12.bb:do_kernel_configcheck)
+NOTE: recipe linux-yocto-4.12.20+gitAUTOINC+19d815d5a3_4014605567-r0: task do_kernel_configcheck: Started
+NOTE: recipe libgcc-7.3.0-r0: task do_package: Succeeded
+NOTE: Running task 3025 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc_7.3.bb:do_packagedata)
+NOTE: recipe libgcc-7.3.0-r0: task do_packagedata: Started
+NOTE: recipe libgcc-7.3.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 3026 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc_7.3.bb:do_package_write_rpm)
+NOTE: Running task 3027 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc_7.3.bb:do_package_qa)
+NOTE: recipe libgcc-7.3.0-r0: task do_package_write_rpm: Started
+NOTE: recipe libgcc-7.3.0-r0: task do_package_qa: Started
+NOTE: recipe libgcc-7.3.0-r0: task do_package_qa: Succeeded
+NOTE: recipe libgcc-7.3.0-r0: task do_package_write_rpm: Succeeded
+NOTE: Running noexec task 3028 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/libgcc_7.3.bb:do_build)
+NOTE: recipe linux-yocto-4.12.20+gitAUTOINC+19d815d5a3_4014605567-r0: task do_kernel_configcheck: Succeeded
+NOTE: Running task 3029 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/linux/linux-yocto_4.12.bb:do_compile)
+NOTE: recipe linux-yocto-4.12.20+gitAUTOINC+19d815d5a3_4014605567-r0: task do_compile: Started
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 3030 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-runtime_7.3.bb:do_compile)
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_compile: Started
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 3031 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-runtime_7.3.bb:do_install)
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_install: Started
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_install: Succeeded
+NOTE: Running task 3032 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-runtime_7.3.bb:do_populate_sysroot)
+NOTE: Running task 3033 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-runtime_7.3.bb:do_package)
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_package: Started
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3034 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/libtool/libtool-cross_2.4.6.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 3035 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/zlib/zlib_1.2.11.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 3036 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.3.5.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 3037 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/cryptodev/cryptodev-linux_1.9.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 3038 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libcap/libcap_2.25.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 3039 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/ptest-runner/ptest-runner_2.1.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe opkg-utils-0.3.5-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe zlib-1.2.11-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe ptest-runner-2.1+gitAUTOINC+8a93832dad-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe cryptodev-linux-1.9-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libcap-2.25-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3040 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/libtool/libtool-cross_2.4.6.bb:do_configure)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_configure: Started
+NOTE: recipe opkg-utils-0.3.5-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3041 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.3.5.bb:do_configure)
+NOTE: recipe zlib-1.2.11-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3042 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/zlib/zlib_1.2.11.bb:do_configure)
+NOTE: recipe opkg-utils-0.3.5-r0: task do_configure: Started
+NOTE: recipe ptest-runner-2.1+gitAUTOINC+8a93832dad-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3043 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/ptest-runner/ptest-runner_2.1.bb:do_configure)
+NOTE: recipe opkg-utils-0.3.5-r0: task do_configure: Succeeded
+NOTE: recipe zlib-1.2.11-r0: task do_configure: Started
+NOTE: Running task 3044 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.3.5.bb:do_compile)
+NOTE: recipe cryptodev-linux-1.9-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3045 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/cryptodev/cryptodev-linux_1.9.bb:do_configure)
+NOTE: recipe ptest-runner-2.1+gitAUTOINC+8a93832dad-r0: task do_configure: Started
+NOTE: recipe opkg-utils-0.3.5-r0: task do_compile: Started
+NOTE: recipe cryptodev-linux-1.9-r0: task do_configure: Started
+NOTE: recipe ptest-runner-2.1+gitAUTOINC+8a93832dad-r0: task do_configure: Succeeded
+NOTE: Running task 3046 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/ptest-runner/ptest-runner_2.1.bb:do_compile)
+NOTE: recipe ptest-runner-2.1+gitAUTOINC+8a93832dad-r0: task do_compile: Started
+NOTE: recipe cryptodev-linux-1.9-r0: task do_configure: Succeeded
+NOTE: Running noexec task 3047 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/cryptodev/cryptodev-linux_1.9.bb:do_compile)
+NOTE: Running task 3048 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/cryptodev/cryptodev-linux_1.9.bb:do_install)
+NOTE: recipe libcap-2.25-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3049 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libcap/libcap_2.25.bb:do_configure)
+NOTE: recipe cryptodev-linux-1.9-r0: task do_install: Started
+NOTE: recipe libcap-2.25-r0: task do_configure: Started
+NOTE: recipe opkg-utils-0.3.5-r0: task do_compile: Succeeded
+NOTE: Running task 3050 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.3.5.bb:do_install)
+NOTE: recipe cryptodev-linux-1.9-r0: task do_install: Succeeded
+NOTE: recipe ptest-runner-2.1+gitAUTOINC+8a93832dad-r0: task do_compile: Succeeded
+NOTE: Running task 3051 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/ptest-runner/ptest-runner_2.1.bb:do_install)
+NOTE: Running task 3052 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/cryptodev/cryptodev-linux_1.9.bb:do_populate_sysroot)
+NOTE: recipe opkg-utils-0.3.5-r0: task do_install: Started
+NOTE: recipe ptest-runner-2.1+gitAUTOINC+8a93832dad-r0: task do_install: Started
+NOTE: recipe cryptodev-linux-1.9-r0: task do_populate_sysroot: Started
+NOTE: recipe libcap-2.25-r0: task do_configure: Succeeded
+NOTE: Running task 3053 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libcap/libcap_2.25.bb:do_compile)
+NOTE: recipe cryptodev-linux-1.9-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libcap-2.25-r0: task do_compile: Started
+NOTE: Running task 3054 of 6148 (/home/hunter/yocto/poky/meta/recipes-connectivity/openssl/openssl_1.0.2n.bb:do_prepare_recipe_sysroot)
+NOTE: recipe ptest-runner-2.1+gitAUTOINC+8a93832dad-r0: task do_install: Succeeded
+NOTE: Running task 3055 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/libtool/libtool_2.4.6.bb:do_prepare_recipe_sysroot)
+NOTE: recipe opkg-utils-0.3.5-r0: task do_install: Succeeded
+NOTE: Running task 3056 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.3.5.bb:do_populate_sysroot)
+NOTE: recipe opkg-utils-0.3.5-r0: task do_populate_sysroot: Started
+NOTE: recipe libtool-2.4.6-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe openssl-1.0.2n-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe zlib-1.2.11-r0: task do_configure: Succeeded
+NOTE: recipe opkg-utils-0.3.5-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3057 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/zlib/zlib_1.2.11.bb:do_configure_ptest_base)
+NOTE: Running task 3058 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/tcp-wrappers/tcp-wrappers_7.6.bb:do_prepare_recipe_sysroot)
+NOTE: recipe zlib-1.2.11-r0: task do_configure_ptest_base: Started
+NOTE: recipe zlib-1.2.11-r0: task do_configure_ptest_base: Succeeded
+NOTE: Running task 3059 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/zlib/zlib_1.2.11.bb:do_compile)
+NOTE: recipe libtool-2.4.6-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3060 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/libtool/libtool_2.4.6.bb:do_configure)
+NOTE: recipe tcp-wrappers-7.6-r10: task do_prepare_recipe_sysroot: Started
+NOTE: recipe openssl-1.0.2n-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3061 of 6148 (/home/hunter/yocto/poky/meta/recipes-connectivity/openssl/openssl_1.0.2n.bb:do_configure)
+NOTE: recipe zlib-1.2.11-r0: task do_compile: Started
+NOTE: recipe libtool-2.4.6-r0: task do_configure: Started
+NOTE: recipe openssl-1.0.2n-r0: task do_configure: Started
+NOTE: recipe tcp-wrappers-7.6-r10: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3062 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/tcp-wrappers/tcp-wrappers_7.6.bb:do_configure)
+NOTE: recipe libcap-2.25-r0: task do_compile: Succeeded
+NOTE: Running task 3063 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libcap/libcap_2.25.bb:do_install)
+NOTE: recipe tcp-wrappers-7.6-r10: task do_configure: Started
+NOTE: recipe tcp-wrappers-7.6-r10: task do_configure: Succeeded
+NOTE: Running task 3064 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/tcp-wrappers/tcp-wrappers_7.6.bb:do_compile)
+NOTE: recipe libcap-2.25-r0: task do_install: Started
+NOTE: recipe tcp-wrappers-7.6-r10: task do_compile: Started
+NOTE: recipe libcap-2.25-r0: task do_install: Succeeded
+NOTE: Running task 3065 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libcap/libcap_2.25.bb:do_populate_sysroot)
+NOTE: recipe libcap-2.25-r0: task do_populate_sysroot: Started
+NOTE: recipe libcap-2.25-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3066 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/busybox/busybox_1.24.1.bb:do_prepare_recipe_sysroot)
+NOTE: recipe busybox-1.24.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe busybox-1.24.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3067 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/busybox/busybox_1.24.1.bb:do_configure)
+NOTE: recipe busybox-1.24.1-r0: task do_configure: Started
+NOTE: recipe tcp-wrappers-7.6-r10: task do_compile: Succeeded
+NOTE: Running task 3068 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/tcp-wrappers/tcp-wrappers_7.6.bb:do_install)
+NOTE: recipe tcp-wrappers-7.6-r10: task do_install: Started
+NOTE: recipe zlib-1.2.11-r0: task do_compile: Succeeded
+NOTE: Running task 3069 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/zlib/zlib_1.2.11.bb:do_compile_ptest_base)
+NOTE: recipe zlib-1.2.11-r0: task do_compile_ptest_base: Started
+NOTE: recipe openssl-1.0.2n-r0: task do_configure: Succeeded
+NOTE: Running task 3070 of 6148 (/home/hunter/yocto/poky/meta/recipes-connectivity/openssl/openssl_1.0.2n.bb:do_configure_ptest_base)
+NOTE: recipe tcp-wrappers-7.6-r10: task do_install: Succeeded
+NOTE: Running task 3071 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/tcp-wrappers/tcp-wrappers_7.6.bb:do_populate_sysroot)
+NOTE: recipe openssl-1.0.2n-r0: task do_configure_ptest_base: Started
+NOTE: recipe tcp-wrappers-7.6-r10: task do_populate_sysroot: Started
+NOTE: recipe openssl-1.0.2n-r0: task do_configure_ptest_base: Succeeded
+NOTE: Running task 3072 of 6148 (/home/hunter/yocto/poky/meta/recipes-connectivity/openssl/openssl_1.0.2n.bb:do_compile)
+NOTE: recipe zlib-1.2.11-r0: task do_compile_ptest_base: Succeeded
+NOTE: Running task 3073 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/zlib/zlib_1.2.11.bb:do_install)
+NOTE: recipe openssl-1.0.2n-r0: task do_compile: Started
+NOTE: recipe tcp-wrappers-7.6-r10: task do_populate_sysroot: Succeeded
+NOTE: Running task 3074 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-xserver/xserver-xf86-config_0.1.bb:do_prepare_recipe_sysroot)
+NOTE: recipe zlib-1.2.11-r0: task do_install: Started
+NOTE: recipe xserver-xf86-config-0.1-r33: task do_prepare_recipe_sysroot: Started
+NOTE: recipe zlib-1.2.11-r0: task do_install: Succeeded
+NOTE: Running task 3075 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/zlib/zlib_1.2.11.bb:do_install_ptest_base)
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_package: Succeeded
+NOTE: Running task 3076 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-runtime_7.3.bb:do_packagedata)
+NOTE: recipe zlib-1.2.11-r0: task do_install_ptest_base: Started
+NOTE: recipe zlib-1.2.11-r0: task do_install_ptest_base: Succeeded
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_packagedata: Started
+NOTE: Running task 3077 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/zlib/zlib_1.2.11.bb:do_populate_sysroot)
+NOTE: recipe xserver-xf86-config-0.1-r33: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3078 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-xserver/xserver-xf86-config_0.1.bb:do_configure)
+NOTE: recipe zlib-1.2.11-r0: task do_populate_sysroot: Started
+NOTE: recipe xserver-xf86-config-0.1-r33: task do_configure: Started
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 3079 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.3.5.bb:do_package)
+NOTE: recipe xserver-xf86-config-0.1-r33: task do_configure: Succeeded
+NOTE: Running task 3080 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/zlib/zlib_1.2.11.bb:do_package)
+NOTE: recipe opkg-utils-0.3.5-r0: task do_package: Started
+NOTE: recipe zlib-1.2.11-r0: task do_package: Started
+NOTE: recipe zlib-1.2.11-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3081 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/cryptodev/cryptodev-linux_1.9.bb:do_package)
+NOTE: recipe cryptodev-linux-1.9-r0: task do_package: Started
+NOTE: recipe cryptodev-linux-1.9-r0: task do_package: Succeeded
+NOTE: Running task 3082 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/cryptodev/cryptodev-linux_1.9.bb:do_packagedata)
+NOTE: recipe cryptodev-linux-1.9-r0: task do_packagedata: Started
+NOTE: recipe cryptodev-linux-1.9-r0: task do_packagedata: Succeeded
+NOTE: Running task 3083 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/ptest-runner/ptest-runner_2.1.bb:do_package)
+NOTE: recipe ptest-runner-2.1+gitAUTOINC+8a93832dad-r0: task do_package: Started
+NOTE: recipe opkg-utils-0.3.5-r0: task do_package: Succeeded
+NOTE: Running task 3084 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/opkg-utils/opkg-utils_0.3.5.bb:do_packagedata)
+NOTE: recipe opkg-utils-0.3.5-r0: task do_packagedata: Started
+NOTE: recipe zlib-1.2.11-r0: task do_package: Succeeded
+NOTE: Running task 3085 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/zlib/zlib_1.2.11.bb:do_packagedata)
+NOTE: recipe zlib-1.2.11-r0: task do_packagedata: Started
+NOTE: recipe opkg-utils-0.3.5-r0: task do_packagedata: Succeeded
+NOTE: Running task 3086 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libcap/libcap_2.25.bb:do_package)
+NOTE: recipe zlib-1.2.11-r0: task do_packagedata: Succeeded
+NOTE: Running task 3087 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/gcc/gcc-runtime_7.3.bb:do_package_write_rpm)
+NOTE: recipe libcap-2.25-r0: task do_package: Started
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_package_write_rpm: Started
+NOTE: recipe ptest-runner-2.1+gitAUTOINC+8a93832dad-r0: task do_package: Succeeded
+NOTE: Running task 3088 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/ptest-runner/ptest-runner_2.1.bb:do_packagedata)
+NOTE: recipe ptest-runner-2.1+gitAUTOINC+8a93832dad-r0: task do_packagedata: Started
+NOTE: recipe ptest-runner-2.1+gitAUTOINC+8a93832dad-r0: task do_packagedata: Succeeded
+NOTE: Running task 3089 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/tcp-wrappers/tcp-wrappers_7.6.bb:do_package)
+NOTE: recipe tcp-wrappers-7.6-r10: task do_package: Started
+NOTE: recipe libcap-2.25-r0: task do_package: Succeeded
+NOTE: Running task 3090 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libcap/libcap_2.25.bb:do_packagedata)
+NOTE: recipe libcap-2.25-r0: task do_packagedata: Started
+NOTE: recipe libcap-2.25-r0: task do_packagedata: Succeeded
+NOTE: Running task 3091 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/ptest-runner/ptest-runner_2.1.bb:do_package_write_rpm)
+NOTE: recipe busybox-1.24.1-r0: task do_configure: Succeeded
+NOTE: Running task 3092 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/busybox/busybox_1.24.1.bb:do_configure_ptest_base)
+NOTE: recipe ptest-runner-2.1+gitAUTOINC+8a93832dad-r0: task do_package_write_rpm: Started
+NOTE: recipe busybox-1.24.1-r0: task do_configure_ptest_base: Started
+NOTE: recipe busybox-1.24.1-r0: task do_configure_ptest_base: Succeeded
+NOTE: Running task 3093 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/busybox/busybox_1.24.1.bb:do_compile)
+NOTE: recipe busybox-1.24.1-r0: task do_compile: Started
+NOTE: recipe ptest-runner-2.1+gitAUTOINC+8a93832dad-r0: task do_package_write_rpm: Succeeded
+NOTE: Running task 3094 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/cryptodev/cryptodev-linux_1.9.bb:do_package_write_rpm)
+NOTE: recipe cryptodev-linux-1.9-r0: task do_package_write_rpm: Started
+NOTE: recipe cryptodev-linux-1.9-r0: task do_package_write_rpm: Succeeded
+NOTE: Running task 3095 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/taglib/taglib_1.11.1.bb:do_prepare_recipe_sysroot)
+NOTE: recipe taglib-1.11.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe tcp-wrappers-7.6-r10: task do_package: Succeeded
+NOTE: Running task 3096 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/tcp-wrappers/tcp-wrappers_7.6.bb:do_packagedata)
+NOTE: recipe tcp-wrappers-7.6-r10: task do_packagedata: Started
+NOTE: recipe taglib-1.11.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3097 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/taglib/taglib_1.11.1.bb:do_configure)
+NOTE: recipe tcp-wrappers-7.6-r10: task do_packagedata: Succeeded
+NOTE: recipe taglib-1.11.1-r0: task do_configure: Started
+NOTE: Running task 3098 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libcap/libcap_2.25.bb:do_package_write_rpm)
+NOTE: recipe libcap-2.25-r0: task do_package_write_rpm: Started
+NOTE: recipe libcap-2.25-r0: task do_package_write_rpm: Succeeded
+NOTE: Running task 3099 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-xserver/xserver-xf86-config_0.1.bb:do_compile)
+NOTE: recipe xserver-xf86-config-0.1-r33: task do_compile: Started
+NOTE: recipe xserver-xf86-config-0.1-r33: task do_compile: Succeeded
+NOTE: Running task 3100 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-xserver/xserver-xf86-config_0.1.bb:do_install)
+NOTE: recipe xserver-xf86-config-0.1-r33: task do_install: Started
+NOTE: recipe xserver-xf86-config-0.1-r33: task do_install: Succeeded
+NOTE: Running task 3101 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-xserver/xserver-xf86-config_0.1.bb:do_package)
+NOTE: recipe xserver-xf86-config-0.1-r33: task do_package: Started
+NOTE: recipe xserver-xf86-config-0.1-r33: task do_package: Succeeded
+NOTE: Running task 3102 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/netbase/netbase_5.4.bb:do_prepare_recipe_sysroot)
+NOTE: recipe netbase-1_5.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe taglib-1.11.1-r0: task do_configure: Succeeded
+NOTE: Running task 3103 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/taglib/taglib_1.11.1.bb:do_compile)
+NOTE: recipe taglib-1.11.1-r0: task do_compile: Started
+NOTE: recipe netbase-1_5.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3104 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/netbase/netbase_5.4.bb:do_configure)
+NOTE: recipe netbase-1_5.4-r0: task do_configure: Started
+NOTE: recipe netbase-1_5.4-r0: task do_configure: Succeeded
+NOTE: Running task 3105 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/netbase/netbase_5.4.bb:do_compile)
+NOTE: recipe netbase-1_5.4-r0: task do_compile: Started
+NOTE: recipe netbase-1_5.4-r0: task do_compile: Succeeded
+NOTE: Running task 3106 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/netbase/netbase_5.4.bb:do_install)
+NOTE: recipe netbase-1_5.4-r0: task do_install: Started
+NOTE: recipe netbase-1_5.4-r0: task do_install: Succeeded
+NOTE: Running task 3107 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/netbase/netbase_5.4.bb:do_package)
+NOTE: recipe libtool-2.4.6-r0: task do_configure: Succeeded
+NOTE: Running task 3108 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/libtool/libtool_2.4.6.bb:do_compile)
+NOTE: recipe netbase-1_5.4-r0: task do_package: Started
+NOTE: recipe libtool-2.4.6-r0: task do_compile: Started
+NOTE: recipe gcc-runtime-7.3.0-r0: task do_package_write_rpm: Succeeded
+NOTE: Running task 3109 of 6148 (/home/hunter/yocto/poky/meta/recipes-bsp/alsa-state/alsa-state.bb:do_prepare_recipe_sysroot)
+NOTE: recipe alsa-state-0.2.0-r5: task do_prepare_recipe_sysroot: Started
+NOTE: recipe alsa-state-0.2.0-r5: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3110 of 6148 (/home/hunter/yocto/poky/meta/recipes-bsp/alsa-state/alsa-state.bb:do_configure)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_configure: Succeeded
+NOTE: recipe alsa-state-0.2.0-r5: task do_configure: Started
+NOTE: Running task 3111 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/libtool/libtool-cross_2.4.6.bb:do_compile)
+NOTE: recipe alsa-state-0.2.0-r5: task do_configure: Succeeded
+NOTE: Running task 3112 of 6148 (/home/hunter/yocto/poky/meta/recipes-bsp/alsa-state/alsa-state.bb:do_compile)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_compile: Started
+NOTE: recipe alsa-state-0.2.0-r5: task do_compile: Started
+NOTE: recipe alsa-state-0.2.0-r5: task do_compile: Succeeded
+NOTE: Running task 3113 of 6148 (/home/hunter/yocto/poky/meta/recipes-bsp/alsa-state/alsa-state.bb:do_install)
+NOTE: recipe alsa-state-0.2.0-r5: task do_install: Started
+NOTE: recipe alsa-state-0.2.0-r5: task do_install: Succeeded
+NOTE: Running task 3114 of 6148 (/home/hunter/yocto/poky/meta/recipes-bsp/alsa-state/alsa-state.bb:do_package)
+NOTE: recipe alsa-state-0.2.0-r5: task do_package: Started
+NOTE: recipe netbase-1_5.4-r0: task do_package: Succeeded
+NOTE: Running task 3115 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/packagegroups/packagegroup-core-x11-xserver.bb:do_package)
+NOTE: recipe packagegroup-core-x11-xserver-1.0-r40: task do_package: Started
+NOTE: recipe alsa-state-0.2.0-r5: task do_package: Succeeded
+NOTE: Running task 3116 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xinput-calibrator/pointercal-xinput_0.0.bb:do_prepare_recipe_sysroot)
+NOTE: recipe pointercal-xinput-0.0-r7: task do_prepare_recipe_sysroot: Started
+NOTE: recipe packagegroup-core-x11-xserver-1.0-r40: task do_package: Succeeded
+NOTE: Running task 3117 of 6148 (/home/hunter/yocto/poky/meta/recipes-connectivity/connman/connman-conf.bb:do_prepare_recipe_sysroot)
+NOTE: recipe pointercal-xinput-0.0-r7: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3118 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xinput-calibrator/pointercal-xinput_0.0.bb:do_configure)
+NOTE: recipe connman-conf-1.0-r2: task do_prepare_recipe_sysroot: Started
+NOTE: recipe pointercal-xinput-0.0-r7: task do_configure: Started
+NOTE: recipe pointercal-xinput-0.0-r7: task do_configure: Succeeded
+NOTE: Running task 3119 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xinput-calibrator/pointercal-xinput_0.0.bb:do_compile)
+NOTE: recipe pointercal-xinput-0.0-r7: task do_compile: Started
+NOTE: recipe pointercal-xinput-0.0-r7: task do_compile: Succeeded
+NOTE: Running task 3120 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xinput-calibrator/pointercal-xinput_0.0.bb:do_install)
+NOTE: recipe connman-conf-1.0-r2: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3121 of 6148 (/home/hunter/yocto/poky/meta/recipes-connectivity/connman/connman-conf.bb:do_configure)
+NOTE: recipe pointercal-xinput-0.0-r7: task do_install: Started
+NOTE: recipe connman-conf-1.0-r2: task do_configure: Started
+NOTE: recipe connman-conf-1.0-r2: task do_configure: Succeeded
+NOTE: Running task 3122 of 6148 (/home/hunter/yocto/poky/meta/recipes-connectivity/connman/connman-conf.bb:do_compile)
+NOTE: recipe pointercal-xinput-0.0-r7: task do_install: Succeeded
+NOTE: Running task 3123 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xinput-calibrator/pointercal-xinput_0.0.bb:do_package)
+NOTE: recipe connman-conf-1.0-r2: task do_compile: Started
+NOTE: recipe pointercal-xinput-0.0-r7: task do_package: Started
+NOTE: recipe connman-conf-1.0-r2: task do_compile: Succeeded
+NOTE: Running task 3124 of 6148 (/home/hunter/yocto/poky/meta/recipes-connectivity/connman/connman-conf.bb:do_install)
+NOTE: recipe connman-conf-1.0-r2: task do_install: Started
+NOTE: recipe connman-conf-1.0-r2: task do_install: Succeeded
+NOTE: Running task 3125 of 6148 (/home/hunter/yocto/poky/meta/recipes-connectivity/connman/connman-conf.bb:do_package)
+NOTE: recipe connman-conf-1.0-r2: task do_package: Started
+NOTE: recipe libtool-2.4.6-r0: task do_compile: Succeeded
+NOTE: Running task 3126 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/libtool/libtool_2.4.6.bb:do_install)
+NOTE: recipe pointercal-xinput-0.0-r7: task do_package: Succeeded
+NOTE: Running task 3127 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/matchbox-session/matchbox-session_0.1.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libtool-2.4.6-r0: task do_install: Started
+NOTE: recipe matchbox-session-0.1-r4: task do_prepare_recipe_sysroot: Started
+NOTE: recipe connman-conf-1.0-r2: task do_package: Succeeded
+NOTE: Running task 3128 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/devel-config/nfs-export-root.bb:do_prepare_recipe_sysroot)
+NOTE: recipe matchbox-session-0.1-r4: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3129 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/x11-common/xserver-nodm-init_3.0.bb:do_prepare_recipe_sysroot)
+NOTE: recipe nfs-export-root-1.0-r1: task do_prepare_recipe_sysroot: Started
+NOTE: recipe xserver-nodm-init-3.0-r31: task do_prepare_recipe_sysroot: Started
+NOTE: recipe nfs-export-root-1.0-r1: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3130 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/init-ifupdown/init-ifupdown_1.0.bb:do_prepare_recipe_sysroot)
+NOTE: recipe init-ifupdown-1.0-r7: task do_prepare_recipe_sysroot: Started
+NOTE: recipe xserver-nodm-init-3.0-r31: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3131 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/devel-config/distcc-config.bb:do_prepare_recipe_sysroot)
+NOTE: recipe distcc-config-1.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_compile: Succeeded
+NOTE: recipe init-ifupdown-1.0-r7: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3132 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/libtool/libtool-cross_2.4.6.bb:do_install)
+NOTE: Running task 3133 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/modutils-initscripts/modutils-initscripts.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_install: Started
+NOTE: recipe modutils-initscripts-1.0-r7: task do_prepare_recipe_sysroot: Started
+NOTE: recipe distcc-config-1.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3134 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/x11-common/xserver-nodm-init_3.0.bb:do_configure)
+NOTE: recipe xserver-nodm-init-3.0-r31: task do_configure: Started
+NOTE: recipe xserver-nodm-init-3.0-r31: task do_configure: Succeeded
+NOTE: Running task 3135 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/devel-config/distcc-config.bb:do_configure)
+NOTE: recipe modutils-initscripts-1.0-r7: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3136 of 6148 (/home/hunter/yocto/poky/meta/recipes-kernel/modutils-initscripts/modutils-initscripts.bb:do_configure)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_install: Succeeded
+NOTE: Running task 3137 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/libtool/libtool-cross_2.4.6.bb:do_populate_sysroot)
+NOTE: recipe distcc-config-1.0-r0: task do_configure: Started
+NOTE: recipe distcc-config-1.0-r0: task do_configure: Succeeded
+NOTE: Running task 3138 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/libtool/libtool-cross_2.4.6.bb:do_package)
+NOTE: recipe modutils-initscripts-1.0-r7: task do_configure: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_populate_sysroot: Started
+NOTE: recipe modutils-initscripts-1.0-r7: task do_configure: Succeeded
+NOTE: Running task 3139 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/devel-config/nfs-export-root.bb:do_configure)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package: Started
+NOTE: recipe nfs-export-root-1.0-r1: task do_configure: Started
+NOTE: recipe nfs-export-root-1.0-r1: task do_configure: Succeeded
+NOTE: Running task 3140 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/matchbox-session/matchbox-session_0.1.bb:do_configure)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_package: Succeeded
+NOTE: Running task 3141 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/libtool/libtool-cross_2.4.6.bb:do_packagedata)
+NOTE: recipe matchbox-session-0.1-r4: task do_configure: Started
+NOTE: recipe matchbox-session-0.1-r4: task do_configure: Succeeded
+NOTE: Running task 3142 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/init-ifupdown/init-ifupdown_1.0.bb:do_configure)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_packagedata: Started
+NOTE: recipe libtool-cross-2.4.6-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3143 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/bzip2/bzip2_1.0.6.bb:do_prepare_recipe_sysroot)
+NOTE: recipe init-ifupdown-1.0-r7: task do_configure: Started
+NOTE: recipe init-ifupdown-1.0-r7: task do_configure: Succeeded
+NOTE: Running task 3144 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-util/util-macros_1.19.1.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libtool-cross-2.4.6-r0: task do_packagedata: Succeeded
+NOTE: Running task 3145 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/bash-completion/bash-completion_2.7.bb:do_prepare_recipe_sysroot)
+NOTE: recipe bzip2-1.0.6-r5: task do_prepare_recipe_sysroot: Started
+NOTE: recipe util-macros-1_1.19.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe bash-completion-2.7-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe bzip2-1.0.6-r5: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3146 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/bzip2/bzip2_1.0.6.bb:do_configure)
+NOTE: recipe util-macros-1_1.19.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe bash-completion-2.7-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3147 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-util/util-macros_1.19.1.bb:do_configure)
+NOTE: Running task 3148 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/bash-completion/bash-completion_2.7.bb:do_configure)
+NOTE: recipe bzip2-1.0.6-r5: task do_configure: Started
+NOTE: recipe util-macros-1_1.19.1-r0: task do_configure: Started
+NOTE: recipe bash-completion-2.7-r0: task do_configure: Started
+NOTE: recipe libtool-2.4.6-r0: task do_install: Succeeded
+NOTE: Running task 3149 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_prepare_recipe_sysroot)
+NOTE: recipe attr-2.4.47-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe attr-2.4.47-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3150 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_configure)
+NOTE: recipe attr-2.4.47-r0: task do_configure: Started
+NOTE: recipe util-macros-1_1.19.1-r0: task do_configure: Succeeded
+NOTE: Running task 3151 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-util/util-macros_1.19.1.bb:do_compile)
+NOTE: recipe util-macros-1_1.19.1-r0: task do_compile: Started
+NOTE: recipe util-macros-1_1.19.1-r0: task do_compile: Succeeded
+NOTE: Running task 3152 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-util/util-macros_1.19.1.bb:do_install)
+NOTE: recipe util-macros-1_1.19.1-r0: task do_install: Started
+NOTE: recipe bash-completion-2.7-r0: task do_configure: Succeeded
+NOTE: Running task 3153 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/bash-completion/bash-completion_2.7.bb:do_compile)
+NOTE: recipe bash-completion-2.7-r0: task do_compile: Started
+NOTE: recipe util-macros-1_1.19.1-r0: task do_install: Succeeded
+NOTE: Running task 3154 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-util/util-macros_1.19.1.bb:do_populate_sysroot)
+NOTE: recipe util-macros-1_1.19.1-r0: task do_populate_sysroot: Started
+NOTE: recipe util-macros-1_1.19.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3155 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/ncurses/ncurses_6.0+20170715.bb:do_prepare_recipe_sysroot)
+NOTE: recipe ncurses-6.0+20170715-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe bash-completion-2.7-r0: task do_compile: Succeeded
+NOTE: Running task 3156 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/bash-completion/bash-completion_2.7.bb:do_install)
+NOTE: recipe bash-completion-2.7-r0: task do_install: Started
+NOTE: recipe ncurses-6.0+20170715-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3157 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/ncurses/ncurses_6.0+20170715.bb:do_configure)
+NOTE: recipe ncurses-6.0+20170715-r0: task do_configure: Started
+NOTE: recipe bzip2-1.0.6-r5: task do_configure: Succeeded
+NOTE: Running task 3158 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/bzip2/bzip2_1.0.6.bb:do_configure_ptest_base)
+NOTE: recipe bzip2-1.0.6-r5: task do_configure_ptest_base: Started
+NOTE: recipe bzip2-1.0.6-r5: task do_configure_ptest_base: Succeeded
+NOTE: Running task 3159 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/bzip2/bzip2_1.0.6.bb:do_compile)
+NOTE: recipe bash-completion-2.7-r0: task do_install: Succeeded
+NOTE: recipe bzip2-1.0.6-r5: task do_compile: Started
+NOTE: Running task 3160 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/bash-completion/bash-completion_2.7.bb:do_populate_sysroot)
+NOTE: recipe bash-completion-2.7-r0: task do_populate_sysroot: Started
+NOTE: recipe bash-completion-2.7-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3161 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xproto_7.0.31.bb:do_prepare_recipe_sysroot)
+NOTE: recipe xproto-1_7.0.31-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe xproto-1_7.0.31-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3162 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xproto_7.0.31.bb:do_configure)
+NOTE: recipe xproto-1_7.0.31-r0: task do_configure: Started
+NOTE: recipe attr-2.4.47-r0: task do_configure: Succeeded
+NOTE: Running task 3163 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_configure_ptest_base)
+NOTE: recipe attr-2.4.47-r0: task do_configure_ptest_base: Started
+NOTE: recipe attr-2.4.47-r0: task do_configure_ptest_base: Succeeded
+NOTE: Running task 3164 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_compile)
+NOTE: recipe attr-2.4.47-r0: task do_compile: Started
+NOTE: recipe bzip2-1.0.6-r5: task do_compile: Succeeded
+NOTE: Running task 3165 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/bzip2/bzip2_1.0.6.bb:do_compile_ptest_base)
+NOTE: recipe bzip2-1.0.6-r5: task do_compile_ptest_base: Started
+NOTE: recipe bzip2-1.0.6-r5: task do_compile_ptest_base: Succeeded
+NOTE: Running task 3166 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/bzip2/bzip2_1.0.6.bb:do_install)
+NOTE: recipe bzip2-1.0.6-r5: task do_install: Started
+NOTE: recipe bzip2-1.0.6-r5: task do_install: Succeeded
+NOTE: Running task 3167 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/bzip2/bzip2_1.0.6.bb:do_install_ptest_base)
+NOTE: recipe attr-2.4.47-r0: task do_compile: Succeeded
+NOTE: Running task 3168 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_prepare_recipe_sysroot)
+NOTE: recipe bzip2-1.0.6-r5: task do_install_ptest_base: Started
+NOTE: recipe xtrans-1_1.3.5-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe bzip2-1.0.6-r5: task do_install_ptest_base: Succeeded
+NOTE: Running task 3169 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/bzip2/bzip2_1.0.6.bb:do_populate_sysroot)
+NOTE: recipe bzip2-1.0.6-r5: task do_populate_sysroot: Started
+NOTE: recipe xtrans-1_1.3.5-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3170 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_configure)
+NOTE: recipe bzip2-1.0.6-r5: task do_populate_sysroot: Succeeded
+NOTE: Running task 3171 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libpcre/libpcre_8.41.bb:do_prepare_recipe_sysroot)
+NOTE: recipe xtrans-1_1.3.5-r0: task do_configure: Started
+NOTE: recipe libpcre-8.41-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libpcre-8.41-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3172 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libpcre/libpcre_8.41.bb:do_configure)
+NOTE: recipe libpcre-8.41-r0: task do_configure: Started
+NOTE: recipe xproto-1_7.0.31-r0: task do_configure: Succeeded
+NOTE: Running task 3173 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xproto_7.0.31.bb:do_compile)
+NOTE: recipe xproto-1_7.0.31-r0: task do_compile: Started
+NOTE: recipe xproto-1_7.0.31-r0: task do_compile: Succeeded
+NOTE: Running task 3174 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xproto_7.0.31.bb:do_install)
+NOTE: recipe xproto-1_7.0.31-r0: task do_install: Started
+NOTE: recipe xproto-1_7.0.31-r0: task do_install: Succeeded
+NOTE: Running task 3175 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xproto_7.0.31.bb:do_populate_sysroot)
+NOTE: recipe xproto-1_7.0.31-r0: task do_populate_sysroot: Started
+NOTE: recipe xproto-1_7.0.31-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3176 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_compile_ptest_base)
+NOTE: recipe attr-2.4.47-r0: task do_compile_ptest_base: Started
+NOTE: recipe attr-2.4.47-r0: task do_compile_ptest_base: Succeeded
+NOTE: Running task 3177 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_install)
+NOTE: recipe attr-2.4.47-r0: task do_install: Started
+NOTE: recipe xtrans-1_1.3.5-r0: task do_configure: Succeeded
+NOTE: Running task 3178 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_compile)
+NOTE: recipe xtrans-1_1.3.5-r0: task do_compile: Started
+NOTE: recipe xtrans-1_1.3.5-r0: task do_compile: Succeeded
+NOTE: Running task 3179 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_install)
+NOTE: recipe xtrans-1_1.3.5-r0: task do_install: Started
+NOTE: recipe attr-2.4.47-r0: task do_install: Succeeded
+NOTE: Running task 3180 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/base-passwd/base-passwd_3.5.29.bb:do_prepare_recipe_sysroot)
+NOTE: recipe xtrans-1_1.3.5-r0: task do_install: Succeeded
+NOTE: Running task 3181 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_populate_sysroot)
+NOTE: recipe base-passwd-3.5.29-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe xtrans-1_1.3.5-r0: task do_populate_sysroot: Started
+NOTE: recipe base-passwd-3.5.29-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3182 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/base-passwd/base-passwd_3.5.29.bb:do_configure)
+NOTE: recipe xtrans-1_1.3.5-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3183 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/gdbm/gdbm_1.13.bb:do_prepare_recipe_sysroot)
+NOTE: recipe base-passwd-3.5.29-r0: task do_configure: Started
+NOTE: recipe gdbm-1.13-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gdbm-1.13-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3184 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/gdbm/gdbm_1.13.bb:do_configure)
+NOTE: recipe gdbm-1.13-r0: task do_configure: Started
+NOTE: recipe base-passwd-3.5.29-r0: task do_configure: Succeeded
+NOTE: Running task 3185 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/base-passwd/base-passwd_3.5.29.bb:do_compile)
+NOTE: recipe base-passwd-3.5.29-r0: task do_compile: Started
+NOTE: recipe base-passwd-3.5.29-r0: task do_compile: Succeeded
+NOTE: Running task 3186 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/base-passwd/base-passwd_3.5.29.bb:do_install)
+NOTE: recipe ncurses-6.0+20170715-r0: task do_configure: Succeeded
+NOTE: Running task 3187 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/ncurses/ncurses_6.0+20170715.bb:do_compile)
+NOTE: recipe base-passwd-3.5.29-r0: task do_install: Started
+NOTE: recipe ncurses-6.0+20170715-r0: task do_compile: Started
+NOTE: recipe base-passwd-3.5.29-r0: task do_install: Succeeded
+NOTE: Running task 3188 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/base-passwd/base-passwd_3.5.29.bb:do_populate_sysroot)
+NOTE: recipe base-passwd-3.5.29-r0: task do_populate_sysroot: Started
+NOTE: recipe base-passwd-3.5.29-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3189 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xextproto_7.3.0.bb:do_prepare_recipe_sysroot)
+NOTE: recipe xextproto-1_7.3.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe xextproto-1_7.3.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3190 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xextproto_7.3.0.bb:do_configure)
+NOTE: recipe xextproto-1_7.3.0-r0: task do_configure: Started
+NOTE: recipe taglib-1.11.1-r0: task do_compile: Succeeded
+NOTE: Running task 3191 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libpthread-stubs_0.4.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libpthread-stubs-0.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libpthread-stubs-0.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3192 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libpthread-stubs_0.4.bb:do_configure)
+NOTE: recipe libpthread-stubs-0.4-r0: task do_configure: Started
+NOTE: recipe libpcre-8.41-r0: task do_configure: Succeeded
+NOTE: Running task 3193 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libpcre/libpcre_8.41.bb:do_configure_ptest_base)
+NOTE: recipe libpcre-8.41-r0: task do_configure_ptest_base: Started
+NOTE: recipe libpcre-8.41-r0: task do_configure_ptest_base: Succeeded
+NOTE: Running task 3194 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libpcre/libpcre_8.41.bb:do_compile)
+NOTE: recipe libpcre-8.41-r0: task do_compile: Started
+NOTE: recipe libpthread-stubs-0.4-r0: task do_configure: Succeeded
+NOTE: Running task 3195 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libpthread-stubs_0.4.bb:do_compile)
+NOTE: recipe libpthread-stubs-0.4-r0: task do_compile: Started
+NOTE: recipe libpthread-stubs-0.4-r0: task do_compile: Succeeded
+NOTE: Running task 3196 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libpthread-stubs_0.4.bb:do_install)
+NOTE: recipe libpthread-stubs-0.4-r0: task do_install: Started
+NOTE: recipe libpthread-stubs-0.4-r0: task do_install: Succeeded
+NOTE: Running task 3197 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3198 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_configure)
+NOTE: recipe xextproto-1_7.3.0-r0: task do_configure: Succeeded
+NOTE: Running task 3199 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xextproto_7.3.0.bb:do_compile)
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_configure: Started
+NOTE: recipe xextproto-1_7.3.0-r0: task do_compile: Started
+NOTE: recipe xextproto-1_7.3.0-r0: task do_compile: Succeeded
+NOTE: Running task 3200 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xextproto_7.3.0.bb:do_install)
+NOTE: recipe xextproto-1_7.3.0-r0: task do_install: Started
+NOTE: recipe xextproto-1_7.3.0-r0: task do_install: Succeeded
+NOTE: Running task 3201 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.8.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libxau-1_1.0.8-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libxau-1_1.0.8-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3202 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.8.bb:do_configure)
+NOTE: recipe libxau-1_1.0.8-r0: task do_configure: Started
+NOTE: recipe gdbm-1.13-r0: task do_configure: Succeeded
+NOTE: Running task 3203 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xcb-proto_1.12.bb:do_prepare_recipe_sysroot)
+NOTE: recipe xcb-proto-1.12-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe xcb-proto-1.12-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3204 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xcb-proto_1.12.bb:do_configure)
+NOTE: recipe xcb-proto-1.12-r0: task do_configure: Started
+NOTE: recipe xcb-proto-1.12-r0: task do_configure: Succeeded
+NOTE: Running task 3205 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xcb-proto_1.12.bb:do_compile)
+NOTE: recipe xcb-proto-1.12-r0: task do_compile: Started
+NOTE: recipe xcb-proto-1.12-r0: task do_compile: Succeeded
+NOTE: Running task 3206 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xcb-proto_1.12.bb:do_install)
+NOTE: recipe xcb-proto-1.12-r0: task do_install: Started
+NOTE: recipe xcb-proto-1.12-r0: task do_install: Succeeded
+NOTE: Running task 3207 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xextproto_7.3.0.bb:do_populate_sysroot)
+NOTE: recipe xextproto-1_7.3.0-r0: task do_populate_sysroot: Started
+NOTE: recipe xextproto-1_7.3.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3208 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libpthread-stubs_0.4.bb:do_populate_sysroot)
+NOTE: recipe libpthread-stubs-0.4-r0: task do_populate_sysroot: Started
+NOTE: recipe libpthread-stubs-0.4-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3209 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xcb-proto_1.12.bb:do_populate_sysroot)
+NOTE: recipe xcb-proto-1.12-r0: task do_populate_sysroot: Started
+NOTE: recipe libpcre-8.41-r0: task do_compile: Succeeded
+NOTE: Running task 3210 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libpcre/libpcre_8.41.bb:do_compile_ptest_base)
+NOTE: recipe xcb-proto-1.12-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3211 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/inputproto_2.3.2.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libpcre-8.41-r0: task do_compile_ptest_base: Started
+NOTE: recipe libpcre-8.41-r0: task do_compile_ptest_base: Succeeded
+NOTE: Running task 3212 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libpcre/libpcre_8.41.bb:do_install)
+NOTE: recipe inputproto-1_2.3.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libpcre-8.41-r0: task do_install: Started
+NOTE: recipe inputproto-1_2.3.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3213 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/inputproto_2.3.2.bb:do_configure)
+NOTE: recipe inputproto-1_2.3.2-r0: task do_configure: Started
+NOTE: recipe busybox-1.24.1-r0: task do_compile: Succeeded
+NOTE: Running task 3214 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/kbproto_1.0.7.bb:do_prepare_recipe_sysroot)
+NOTE: recipe kbproto-1_1.0.7-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libpcre-8.41-r0: task do_install: Succeeded
+NOTE: Running task 3215 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libffi/libffi_3.2.1.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libffi-3.2.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe kbproto-1_1.0.7-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3216 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/kbproto_1.0.7.bb:do_configure)
+NOTE: recipe kbproto-1_1.0.7-r0: task do_configure: Started
+NOTE: recipe libffi-3.2.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3217 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libffi/libffi_3.2.1.bb:do_configure)
+NOTE: recipe libffi-3.2.1-r0: task do_configure: Started
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_configure: Succeeded
+NOTE: Running task 3218 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_compile)
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_compile: Started
+NOTE: recipe libxau-1_1.0.8-r0: task do_configure: Succeeded
+NOTE: Running task 3219 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.8.bb:do_compile)
+NOTE: recipe libxau-1_1.0.8-r0: task do_compile: Started
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_compile: Succeeded
+NOTE: Running task 3220 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_install)
+NOTE: recipe libxau-1_1.0.8-r0: task do_compile: Succeeded
+NOTE: Running task 3221 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.8.bb:do_install)
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_install: Started
+NOTE: recipe libxau-1_1.0.8-r0: task do_install: Started
+NOTE: recipe libxau-1_1.0.8-r0: task do_install: Succeeded
+NOTE: Running task 3222 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.8.bb:do_populate_sysroot)
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_install: Succeeded
+NOTE: Running task 3223 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_populate_sysroot)
+NOTE: recipe libxau-1_1.0.8-r0: task do_populate_sysroot: Started
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_populate_sysroot: Started
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe libxau-1_1.0.8-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3224 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/expat/expat_2.2.3.bb:do_prepare_recipe_sysroot)
+NOTE: Running task 3225 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxcb_1.12.bb:do_prepare_recipe_sysroot)
+NOTE: recipe expat-2.2.3-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libxcb-1.12-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe expat-2.2.3-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3226 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/expat/expat_2.2.3.bb:do_configure)
+NOTE: recipe expat-2.2.3-r0: task do_configure: Started
+NOTE: recipe libxcb-1.12-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3227 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxcb_1.12.bb:do_configure)
+NOTE: recipe libxcb-1.12-r0: task do_configure: Started
+NOTE: recipe inputproto-1_2.3.2-r0: task do_configure: Succeeded
+NOTE: Running task 3228 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/inputproto_2.3.2.bb:do_compile)
+NOTE: recipe inputproto-1_2.3.2-r0: task do_compile: Started
+NOTE: recipe inputproto-1_2.3.2-r0: task do_compile: Succeeded
+NOTE: Running task 3229 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/inputproto_2.3.2.bb:do_install)
+NOTE: recipe inputproto-1_2.3.2-r0: task do_install: Started
+NOTE: recipe inputproto-1_2.3.2-r0: task do_install: Succeeded
+NOTE: Running task 3230 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/inputproto_2.3.2.bb:do_populate_sysroot)
+NOTE: recipe inputproto-1_2.3.2-r0: task do_populate_sysroot: Started
+NOTE: recipe kbproto-1_1.0.7-r0: task do_configure: Succeeded
+NOTE: Running task 3231 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/kbproto_1.0.7.bb:do_compile)
+NOTE: recipe inputproto-1_2.3.2-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe kbproto-1_1.0.7-r0: task do_compile: Started
+NOTE: Running task 3232 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libice_1.0.9.bb:do_prepare_recipe_sysroot)
+NOTE: recipe kbproto-1_1.0.7-r0: task do_compile: Succeeded
+NOTE: Running task 3233 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/kbproto_1.0.7.bb:do_install)
+NOTE: recipe kbproto-1_1.0.7-r0: task do_install: Started
+NOTE: recipe libice-1_1.0.9-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe kbproto-1_1.0.7-r0: task do_install: Succeeded
+NOTE: Running task 3234 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/kbproto_1.0.7.bb:do_populate_sysroot)
+NOTE: recipe kbproto-1_1.0.7-r0: task do_populate_sysroot: Started
+NOTE: recipe libice-1_1.0.9-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3235 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libice_1.0.9.bb:do_configure)
+NOTE: recipe libice-1_1.0.9-r0: task do_configure: Started
+NOTE: recipe kbproto-1_1.0.7-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3236 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_install_ptest_base)
+NOTE: recipe attr-2.4.47-r0: task do_install_ptest_base: Started
+NOTE: recipe attr-2.4.47-r0: task do_install_ptest_base: Succeeded
+NOTE: Running task 3237 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/attr/attr_2.4.47.bb:do_populate_sysroot)
+NOTE: recipe attr-2.4.47-r0: task do_populate_sysroot: Started
+NOTE: recipe attr-2.4.47-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3238 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/shadow/shadow_4.2.1.bb:do_prepare_recipe_sysroot)
+NOTE: recipe shadow-4.2.1-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe shadow-4.2.1-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3239 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/shadow/shadow_4.2.1.bb:do_configure)
+NOTE: recipe shadow-4.2.1-r0: task do_configure: Started
+NOTE: recipe libffi-3.2.1-r0: task do_configure: Succeeded
+NOTE: Running task 3240 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libffi/libffi_3.2.1.bb:do_compile)
+NOTE: recipe libffi-3.2.1-r0: task do_compile: Started
+NOTE: recipe openssl-1.0.2n-r0: task do_compile: Succeeded
+NOTE: Running task 3241 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot_4.2.1.bb:do_prepare_recipe_sysroot)
+NOTE: recipe shadow-sysroot-4.2.1-r3: task do_prepare_recipe_sysroot: Started
+NOTE: recipe shadow-sysroot-4.2.1-r3: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3242 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot_4.2.1.bb:do_configure)
+NOTE: recipe shadow-sysroot-4.2.1-r3: task do_configure: Started
+NOTE: recipe shadow-sysroot-4.2.1-r3: task do_configure: Succeeded
+NOTE: Running task 3243 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot_4.2.1.bb:do_compile)
+NOTE: recipe libffi-3.2.1-r0: task do_compile: Succeeded
+NOTE: Running task 3244 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libffi/libffi_3.2.1.bb:do_install)
+NOTE: recipe shadow-sysroot-4.2.1-r3: task do_compile: Started
+NOTE: recipe shadow-sysroot-4.2.1-r3: task do_compile: Succeeded
+NOTE: Running task 3245 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot_4.2.1.bb:do_install)
+NOTE: recipe libffi-3.2.1-r0: task do_install: Started
+NOTE: recipe shadow-sysroot-4.2.1-r3: task do_install: Started
+NOTE: recipe shadow-sysroot-4.2.1-r3: task do_install: Succeeded
+NOTE: Running task 3246 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/shadow/shadow-sysroot_4.2.1.bb:do_populate_sysroot)
+NOTE: recipe shadow-sysroot-4.2.1-r3: task do_populate_sysroot: Started
+NOTE: recipe libffi-3.2.1-r0: task do_install: Succeeded
+NOTE: Running task 3247 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libffi/libffi_3.2.1.bb:do_populate_sysroot)
+NOTE: recipe shadow-sysroot-4.2.1-r3: task do_populate_sysroot: Succeeded
+NOTE: Running task 3248 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libpcre/libpcre_8.41.bb:do_install_ptest_base)
+NOTE: recipe libffi-3.2.1-r0: task do_populate_sysroot: Started
+NOTE: recipe libpcre-8.41-r0: task do_install_ptest_base: Started
+NOTE: recipe libpcre-8.41-r0: task do_install_ptest_base: Succeeded
+NOTE: Running task 3249 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/libpcre/libpcre_8.41.bb:do_populate_sysroot)
+NOTE: recipe libffi-3.2.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3250 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/gdbm/gdbm_1.13.bb:do_configure_ptest_base)
+NOTE: recipe libpcre-8.41-r0: task do_populate_sysroot: Started
+NOTE: recipe gdbm-1.13-r0: task do_configure_ptest_base: Started
+NOTE: recipe gdbm-1.13-r0: task do_configure_ptest_base: Succeeded
+NOTE: Running task 3251 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/gdbm/gdbm_1.13.bb:do_compile)
+NOTE: recipe gdbm-1.13-r0: task do_compile: Started
+NOTE: recipe libpcre-8.41-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3252 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-util/util-macros_1.19.1.bb:do_package)
+NOTE: recipe expat-2.2.3-r0: task do_configure: Succeeded
+NOTE: Running task 3253 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/expat/expat_2.2.3.bb:do_compile)
+NOTE: recipe util-macros-1_1.19.1-r0: task do_package: Started
+NOTE: recipe expat-2.2.3-r0: task do_compile: Started
+NOTE: recipe util-macros-1_1.19.1-r0: task do_package: Succeeded
+NOTE: Running task 3254 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-util/util-macros_1.19.1.bb:do_packagedata)
+NOTE: recipe util-macros-1_1.19.1-r0: task do_packagedata: Started
+NOTE: recipe util-macros-1_1.19.1-r0: task do_packagedata: Succeeded
+NOTE: Running task 3255 of 6148 (/home/hunter/yocto/poky/meta/recipes-connectivity/openssl/openssl_1.0.2n.bb:do_compile_ptest_base)
+NOTE: recipe openssl-1.0.2n-r0: task do_compile_ptest_base: Started
+NOTE: recipe expat-2.2.3-r0: task do_compile: Succeeded
+NOTE: Running task 3256 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/expat/expat_2.2.3.bb:do_install)
+NOTE: recipe expat-2.2.3-r0: task do_install: Started
+NOTE: recipe gdbm-1.13-r0: task do_compile: Succeeded
+NOTE: Running task 3257 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/gdbm/gdbm_1.13.bb:do_compile_ptest_base)
+NOTE: recipe gdbm-1.13-r0: task do_compile_ptest_base: Started
+NOTE: recipe expat-2.2.3-r0: task do_install: Succeeded
+NOTE: Running task 3258 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/expat/expat_2.2.3.bb:do_populate_sysroot)
+NOTE: recipe expat-2.2.3-r0: task do_populate_sysroot: Started
+NOTE: recipe ncurses-6.0+20170715-r0: task do_compile: Succeeded
+NOTE: Running task 3259 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/ncurses/ncurses_6.0+20170715.bb:do_install)
+NOTE: recipe expat-2.2.3-r0: task do_populate_sysroot: Succeeded
+NOTE: recipe ncurses-6.0+20170715-r0: task do_install: Started
+NOTE: Running task 3260 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/db/db_5.3.28.bb:do_prepare_recipe_sysroot)
+NOTE: recipe db-1_5.3.28-r1: task do_prepare_recipe_sysroot: Started
+NOTE: recipe db-1_5.3.28-r1: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3261 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/db/db_5.3.28.bb:do_configure)
+NOTE: recipe db-1_5.3.28-r1: task do_configure: Started
+NOTE: recipe libice-1_1.0.9-r0: task do_configure: Succeeded
+NOTE: Running task 3262 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libice_1.0.9.bb:do_compile)
+NOTE: recipe libice-1_1.0.9-r0: task do_compile: Started
+NOTE: recipe libxcb-1.12-r0: task do_configure: Succeeded
+NOTE: Running task 3263 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxcb_1.12.bb:do_compile)
+NOTE: recipe libxcb-1.12-r0: task do_compile: Started
+NOTE: recipe openssl-1.0.2n-r0: task do_compile_ptest_base: Succeeded
+NOTE: Running task 3264 of 6148 (/home/hunter/yocto/poky/meta/recipes-connectivity/openssl/openssl_1.0.2n.bb:do_install)
+NOTE: recipe openssl-1.0.2n-r0: task do_install: Started
+NOTE: recipe libice-1_1.0.9-r0: task do_compile: Succeeded
+NOTE: Running task 3265 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libice_1.0.9.bb:do_install)
+NOTE: recipe libice-1_1.0.9-r0: task do_install: Started
+NOTE: recipe gdbm-1.13-r0: task do_compile_ptest_base: Succeeded
+NOTE: Running task 3266 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/gdbm/gdbm_1.13.bb:do_install)
+NOTE: recipe libice-1_1.0.9-r0: task do_install: Succeeded
+NOTE: recipe gdbm-1.13-r0: task do_install: Started
+NOTE: Running task 3267 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libice_1.0.9.bb:do_populate_sysroot)
+NOTE: recipe libice-1_1.0.9-r0: task do_populate_sysroot: Started
+NOTE: recipe libice-1_1.0.9-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3268 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.2.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libsm-1_1.2.2-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe gdbm-1.13-r0: task do_install: Succeeded
+NOTE: Running task 3269 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/gdbm/gdbm_1.13.bb:do_install_ptest_base)
+NOTE: recipe libsm-1_1.2.2-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: recipe gdbm-1.13-r0: task do_install_ptest_base: Started
+NOTE: Running task 3270 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.2.bb:do_configure)
+NOTE: recipe libsm-1_1.2.2-r0: task do_configure: Started
+NOTE: recipe gdbm-1.13-r0: task do_install_ptest_base: Succeeded
+NOTE: Running task 3271 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xproto_7.0.31.bb:do_package)
+NOTE: recipe xproto-1_7.0.31-r0: task do_package: Started
+NOTE: recipe shadow-4.2.1-r0: task do_configure: Succeeded
+NOTE: Running task 3272 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/shadow/shadow_4.2.1.bb:do_compile)
+NOTE: recipe shadow-4.2.1-r0: task do_compile: Started
+NOTE: recipe xproto-1_7.0.31-r0: task do_package: Succeeded
+NOTE: Running task 3273 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xproto_7.0.31.bb:do_packagedata)
+NOTE: recipe xproto-1_7.0.31-r0: task do_packagedata: Started
+NOTE: recipe xproto-1_7.0.31-r0: task do_packagedata: Succeeded
+NOTE: Running task 3274 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/sqlite/sqlite3_3.20.0.bb:do_prepare_recipe_sysroot)
+NOTE: recipe sqlite3-3_3.20.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe sqlite3-3_3.20.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3275 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/sqlite/sqlite3_3.20.0.bb:do_configure)
+NOTE: recipe sqlite3-3_3.20.0-r0: task do_configure: Started
+NOTE: recipe libxcb-1.12-r0: task do_compile: Succeeded
+NOTE: Running task 3276 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxcb_1.12.bb:do_install)
+NOTE: recipe libxcb-1.12-r0: task do_install: Started
+NOTE: recipe libxcb-1.12-r0: task do_install: Succeeded
+NOTE: Running task 3277 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxcb_1.12.bb:do_populate_sysroot)
+NOTE: recipe libxcb-1.12-r0: task do_populate_sysroot: Started
+NOTE: recipe libxcb-1.12-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3278 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libx11_1.6.5.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libsm-1_1.2.2-r0: task do_configure: Succeeded
+NOTE: Running task 3279 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.2.bb:do_compile)
+NOTE: recipe shadow-4.2.1-r0: task do_compile: Succeeded
+NOTE: Running task 3280 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/shadow/shadow_4.2.1.bb:do_install)
+NOTE: recipe libx11-1_1.6.5-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libsm-1_1.2.2-r0: task do_compile: Started
+NOTE: recipe shadow-4.2.1-r0: task do_install: Started
+NOTE: recipe libx11-1_1.6.5-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3281 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libx11_1.6.5.bb:do_configure)
+NOTE: recipe sqlite3-3_3.20.0-r0: task do_configure: Succeeded
+NOTE: Running task 3282 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/sqlite/sqlite3_3.20.0.bb:do_compile)
+NOTE: recipe libx11-1_1.6.5-r0: task do_configure: Started
+NOTE: recipe sqlite3-3_3.20.0-r0: task do_compile: Started
+NOTE: recipe libsm-1_1.2.2-r0: task do_compile: Succeeded
+NOTE: Running task 3283 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.2.bb:do_install)
+NOTE: recipe libsm-1_1.2.2-r0: task do_install: Started
+NOTE: recipe libsm-1_1.2.2-r0: task do_install: Succeeded
+NOTE: Running task 3284 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libsm_1.2.2.bb:do_populate_sysroot)
+NOTE: recipe libsm-1_1.2.2-r0: task do_populate_sysroot: Started
+NOTE: recipe libsm-1_1.2.2-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3285 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/xz/xz_5.2.3.bb:do_prepare_recipe_sysroot)
+NOTE: recipe xz-5.2.3-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe xz-5.2.3-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3286 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/xz/xz_5.2.3.bb:do_configure)
+NOTE: recipe xz-5.2.3-r0: task do_configure: Started
+NOTE: recipe db-1_5.3.28-r1: task do_configure: Succeeded
+NOTE: Running task 3287 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/db/db_5.3.28.bb:do_compile)
+NOTE: recipe db-1_5.3.28-r1: task do_compile: Started
+NOTE: recipe shadow-4.2.1-r0: task do_install: Succeeded
+NOTE: Running task 3288 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/shadow/shadow_4.2.1.bb:do_populate_sysroot)
+NOTE: recipe shadow-4.2.1-r0: task do_populate_sysroot: Started
+NOTE: recipe shadow-4.2.1-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3289 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/gdbm/gdbm_1.13.bb:do_populate_sysroot)
+NOTE: recipe gdbm-1.13-r0: task do_populate_sysroot: Started
+NOTE: recipe gdbm-1.13-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3290 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/freetype/freetype_2.8.bb:do_prepare_recipe_sysroot)
+NOTE: recipe ncurses-6.0+20170715-r0: task do_install: Succeeded
+NOTE: Running task 3291 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/ncurses/ncurses_6.0+20170715.bb:do_populate_sysroot)
+NOTE: recipe ncurses-6.0+20170715-r0: task do_populate_sysroot: Started
+NOTE: recipe freetype-2.8-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe freetype-2.8-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3292 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/freetype/freetype_2.8.bb:do_configure)
+NOTE: recipe freetype-2.8-r0: task do_configure: Started
+NOTE: recipe ncurses-6.0+20170715-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3293 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/util-linux/util-linux_2.30.bb:do_prepare_recipe_sysroot)
+NOTE: recipe util-linux-2.30-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe util-linux-2.30-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3294 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/util-linux/util-linux_2.30.bb:do_configure)
+NOTE: recipe util-linux-2.30-r0: task do_configure: Started
+NOTE: recipe freetype-2.8-r0: task do_configure: Succeeded
+NOTE: Running task 3295 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/readline/readline_7.0.bb:do_prepare_recipe_sysroot)
+NOTE: recipe readline-7.0-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe readline-7.0-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3296 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/readline/readline_7.0.bb:do_configure)
+NOTE: recipe readline-7.0-r0: task do_configure: Started
+NOTE: recipe libx11-1_1.6.5-r0: task do_configure: Succeeded
+NOTE: Running task 3297 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libx11_1.6.5.bb:do_compile)
+NOTE: recipe libx11-1_1.6.5-r0: task do_compile: Started
+NOTE: recipe xz-5.2.3-r0: task do_configure: Succeeded
+NOTE: Running task 3298 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/xz/xz_5.2.3.bb:do_compile)
+NOTE: recipe xz-5.2.3-r0: task do_compile: Started
+NOTE: recipe readline-7.0-r0: task do_configure: Succeeded
+NOTE: Running task 3299 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/readline/readline_7.0.bb:do_compile)
+NOTE: recipe readline-7.0-r0: task do_compile: Started
+NOTE: recipe xz-5.2.3-r0: task do_compile: Succeeded
+NOTE: Running task 3300 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/xz/xz_5.2.3.bb:do_install)
+NOTE: recipe xz-5.2.3-r0: task do_install: Started
+NOTE: recipe readline-7.0-r0: task do_compile: Succeeded
+NOTE: Running task 3301 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/readline/readline_7.0.bb:do_install)
+NOTE: recipe readline-7.0-r0: task do_install: Started
+NOTE: recipe xz-5.2.3-r0: task do_install: Succeeded
+NOTE: Running task 3302 of 6148 (/home/hunter/yocto/poky/meta/recipes-extended/xz/xz_5.2.3.bb:do_populate_sysroot)
+NOTE: recipe xz-5.2.3-r0: task do_populate_sysroot: Started
+NOTE: recipe xz-5.2.3-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3303 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/freetype/freetype_2.8.bb:do_compile)
+NOTE: recipe freetype-2.8-r0: task do_compile: Started
+NOTE: recipe readline-7.0-r0: task do_install: Succeeded
+NOTE: Running task 3304 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/readline/readline_7.0.bb:do_populate_sysroot)
+NOTE: recipe readline-7.0-r0: task do_populate_sysroot: Started
+NOTE: recipe readline-7.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3305 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_package)
+NOTE: recipe xtrans-1_1.3.5-r0: task do_package: Started
+NOTE: recipe xtrans-1_1.3.5-r0: task do_package: Succeeded
+NOTE: Running task 3306 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/xtrans_1.3.5.bb:do_packagedata)
+NOTE: recipe xtrans-1_1.3.5-r0: task do_packagedata: Started
+NOTE: recipe xtrans-1_1.3.5-r0: task do_packagedata: Succeeded
+NOTE: Running task 3307 of 6148 (/home/hunter/yocto/poky/meta/recipes-multimedia/libpng/libpng_1.6.31.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libpng-1.6.31-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libpng-1.6.31-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3308 of 6148 (/home/hunter/yocto/poky/meta/recipes-multimedia/libpng/libpng_1.6.31.bb:do_configure)
+NOTE: recipe libpng-1.6.31-r0: task do_configure: Started
+NOTE: recipe util-linux-2.30-r0: task do_configure: Succeeded
+NOTE: Running task 3309 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/util-linux/util-linux_2.30.bb:do_configure_ptest_base)
+NOTE: recipe util-linux-2.30-r0: task do_configure_ptest_base: Started
+NOTE: recipe util-linux-2.30-r0: task do_configure_ptest_base: Succeeded
+NOTE: Running task 3310 of 6148 (/home/hunter/yocto/poky/meta/recipes-core/util-linux/util-linux_2.30.bb:do_compile)
+NOTE: recipe util-linux-2.30-r0: task do_compile: Started
+NOTE: recipe freetype-2.8-r0: task do_compile: Succeeded
+NOTE: Running task 3311 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/freetype/freetype_2.8.bb:do_install)
+NOTE: recipe freetype-2.8-r0: task do_install: Started
+NOTE: recipe freetype-2.8-r0: task do_install: Succeeded
+NOTE: Running task 3312 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/freetype/freetype_2.8.bb:do_populate_sysroot)
+NOTE: recipe freetype-2.8-r0: task do_populate_sysroot: Started
+NOTE: recipe db-1_5.3.28-r1: task do_compile: Succeeded
+NOTE: Running task 3313 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/db/db_5.3.28.bb:do_install)
+NOTE: recipe db-1_5.3.28-r1: task do_install: Started
+NOTE: recipe freetype-2.8-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3314 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/fontconfig/fontconfig_2.12.4.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libpng-1.6.31-r0: task do_configure: Succeeded
+NOTE: Running task 3315 of 6148 (/home/hunter/yocto/poky/meta/recipes-multimedia/libpng/libpng_1.6.31.bb:do_compile)
+NOTE: recipe fontconfig-2.12.4-r0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe libpng-1.6.31-r0: task do_compile: Started
+NOTE: recipe fontconfig-2.12.4-r0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3316 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/fontconfig/fontconfig_2.12.4.bb:do_configure)
+NOTE: recipe fontconfig-2.12.4-r0: task do_configure: Started
+NOTE: recipe openssl-1.0.2n-r0: task do_install: Succeeded
+NOTE: Running task 3317 of 6148 (/home/hunter/yocto/poky/meta/recipes-connectivity/openssl/openssl_1.0.2n.bb:do_install_ptest_base)
+NOTE: recipe openssl-1.0.2n-r0: task do_install_ptest_base: Started
+NOTE: recipe db-1_5.3.28-r1: task do_install: Succeeded
+NOTE: recipe openssl-1.0.2n-r0: task do_install_ptest_base: Succeeded
+NOTE: Running task 3318 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/db/db_5.3.28.bb:do_populate_sysroot)
+NOTE: Running task 3319 of 6148 (/home/hunter/yocto/poky/meta/recipes-connectivity/openssl/openssl_1.0.2n.bb:do_populate_sysroot)
+NOTE: recipe openssl-1.0.2n-r0: task do_populate_sysroot: Started
+NOTE: recipe sqlite3-3_3.20.0-r0: task do_compile: Succeeded
+NOTE: Running task 3320 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/sqlite/sqlite3_3.20.0.bb:do_install)
+NOTE: recipe sqlite3-3_3.20.0-r0: task do_install: Started
+NOTE: recipe db-1_5.3.28-r1: task do_populate_sysroot: Started
+NOTE: recipe sqlite3-3_3.20.0-r0: task do_install: Succeeded
+NOTE: Running task 3321 of 6148 (/home/hunter/yocto/poky/meta/recipes-support/sqlite/sqlite3_3.20.0.bb:do_populate_sysroot)
+NOTE: recipe sqlite3-3_3.20.0-r0: task do_populate_sysroot: Started
+NOTE: recipe db-1_5.3.28-r1: task do_populate_sysroot: Succeeded
+NOTE: Running task 3322 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xextproto_7.3.0.bb:do_package)
+NOTE: recipe xextproto-1_7.3.0-r0: task do_package: Started
+NOTE: recipe sqlite3-3_3.20.0-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3323 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/renderproto_0.11.1.bb:do_prepare_recipe_sysroot)
+NOTE: recipe renderproto-1_0.11.1-r1: task do_prepare_recipe_sysroot: Started
+NOTE: recipe openssl-1.0.2n-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3324 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/python/python3_3.5.3.bb:do_prepare_recipe_sysroot)
+NOTE: recipe libpng-1.6.31-r0: task do_compile: Succeeded
+NOTE: Running task 3325 of 6148 (/home/hunter/yocto/poky/meta/recipes-multimedia/libpng/libpng_1.6.31.bb:do_install)
+NOTE: recipe renderproto-1_0.11.1-r1: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3326 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/renderproto_0.11.1.bb:do_configure)
+NOTE: recipe libpng-1.6.31-r0: task do_install: Started
+NOTE: recipe python3-3.5.3-r1.0: task do_prepare_recipe_sysroot: Started
+NOTE: recipe renderproto-1_0.11.1-r1: task do_configure: Started
+NOTE: recipe libpng-1.6.31-r0: task do_install: Succeeded
+NOTE: Running task 3327 of 6148 (/home/hunter/yocto/poky/meta/recipes-multimedia/libpng/libpng_1.6.31.bb:do_populate_sysroot)
+NOTE: recipe libpng-1.6.31-r0: task do_populate_sysroot: Started
+NOTE: recipe python3-3.5.3-r1.0: task do_prepare_recipe_sysroot: Succeeded
+NOTE: Running task 3328 of 6148 (/home/hunter/yocto/poky/meta/recipes-devtools/python/python3_3.5.3.bb:do_configure)
+NOTE: recipe python3-3.5.3-r1.0: task do_configure: Started
+NOTE: recipe libpng-1.6.31-r0: task do_populate_sysroot: Succeeded
+NOTE: Running task 3329 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libpthread-stubs_0.4.bb:do_package)
+NOTE: recipe xextproto-1_7.3.0-r0: task do_package: Succeeded
+NOTE: Running task 3330 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xextproto_7.3.0.bb:do_packagedata)
+NOTE: recipe libpthread-stubs-0.4-r0: task do_package: Started
+NOTE: recipe xextproto-1_7.3.0-r0: task do_packagedata: Started
+NOTE: recipe xextproto-1_7.3.0-r0: task do_packagedata: Succeeded
+NOTE: Running task 3331 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_package)
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_package: Started
+NOTE: recipe libpthread-stubs-0.4-r0: task do_package: Succeeded
+NOTE: Running task 3332 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libpthread-stubs_0.4.bb:do_packagedata)
+NOTE: recipe libpthread-stubs-0.4-r0: task do_packagedata: Started
+NOTE: recipe libpthread-stubs-0.4-r0: task do_packagedata: Succeeded
+NOTE: Running task 3333 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.8.bb:do_package)
+NOTE: recipe libxau-1_1.0.8-r0: task do_package: Started
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_package: Succeeded
+NOTE: Running task 3334 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxdmcp_1.1.2.bb:do_packagedata)
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_packagedata: Started
+NOTE: recipe libxdmcp-1_1.1.2-r0: task do_packagedata: Succeeded
+NOTE: Running task 3335 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xcb-proto_1.12.bb:do_package)
+NOTE: recipe xcb-proto-1.12-r0: task do_package: Started
+NOTE: recipe libxau-1_1.0.8-r0: task do_package: Succeeded
+NOTE: Running task 3336 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxau_1.0.8.bb:do_packagedata)
+NOTE: recipe libxau-1_1.0.8-r0: task do_packagedata: Started
+NOTE: recipe libxau-1_1.0.8-r0: task do_packagedata: Succeeded
+NOTE: Running task 3337 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/inputproto_2.3.2.bb:do_package)
+NOTE: recipe inputproto-1_2.3.2-r0: task do_package: Started
+NOTE: recipe xcb-proto-1.12-r0: task do_package: Succeeded
+NOTE: Running task 3338 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/xcb-proto_1.12.bb:do_packagedata)
+NOTE: recipe xcb-proto-1.12-r0: task do_packagedata: Started
+NOTE: recipe xcb-proto-1.12-r0: task do_packagedata: Succeeded
+NOTE: Running task 3339 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libxcb_1.12.bb:do_package)
+NOTE: recipe libxcb-1.12-r0: task do_package: Started
+NOTE: recipe renderproto-1_0.11.1-r1: task do_configure: Succeeded
+NOTE: Running task 3340 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/renderproto_0.11.1.bb:do_compile)
+NOTE: recipe libx11-1_1.6.5-r0: task do_compile: Succeeded
+NOTE: Running task 3341 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-lib/libx11_1.6.5.bb:do_install)
+NOTE: recipe renderproto-1_0.11.1-r1: task do_compile: Started
+NOTE: recipe renderproto-1_0.11.1-r1: task do_compile: Succeeded
+NOTE: Running task 3342 of 6148 (/home/hunter/yocto/poky/meta/recipes-graphics/xorg-proto/renderproto_0.11.1.bb:do_install)
+NOTE: recipe libx11-1_1.6.5-r0: task do_install: Started
+NOTE: recipe renderproto-1_0.11.1-r1: task do_install: Started

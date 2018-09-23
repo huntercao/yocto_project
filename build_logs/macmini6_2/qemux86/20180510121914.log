@@ -1,0 +1,4 @@
+ERROR: Nothing PROVIDES 'core-image'. Close matches:
+  core-image-rt
+  core-image-x11
+  core-image-lsb

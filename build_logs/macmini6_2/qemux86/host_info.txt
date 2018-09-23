@@ -1,0 +1,9 @@
+cmini:~$ uname -a
+Linux hunter-Macmini 4.13.0-39-generic #44~16.04.1-Ubuntu SMP Thu Apr 5 16:43:10 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+hunter@hunter-Macmini:~$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 16.04.4 LTS
+Release:	16.04
+Codename:	xenial
+
