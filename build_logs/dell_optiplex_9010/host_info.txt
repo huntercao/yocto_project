@@ -1,0 +1,9 @@
+hunter@hunter-OptiPlex-9010:~/github/linux$ uname -a
+Linux hunter-OptiPlex-9010 4.15.0-34-generic #37-Ubuntu SMP Mon Aug 27 15:21:48 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+hunter@hunter-OptiPlex-9010:~/github/linux$ lsb_release -a
+No LSB modules are available.
+Distributor ID:	Ubuntu
+Description:	Ubuntu 18.04 LTS
+Release:	18.04
+Codename:	bionic
+
